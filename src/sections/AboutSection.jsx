@@ -11,7 +11,7 @@ function AboutSection() {
 
         <div className="grid col-2-by-1">
           <div className="img-box">
-            <img src="../../public/Right Side.png" alt="" />
+            <img src="/Right Side.png" alt="" />
           </div>
 
           <div className="grid col-2-by-1 about-section_cards">
