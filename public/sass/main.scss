@@ -1,0 +1,28 @@
+@import "./utilities/mixin";
+@import "./utilities/utilities";
+@import "./utilities/variables";
+
+@import "./base/fonttype";
+@import "./base/reset";
+@import "./base/typography";
+
+
+@import "./components/buttons";
+
+@import "./layout/container";
+@import "./layout/grid";
+
+@import "./pages/about";
+@import "./pages/blog";
+@import "./pages/blogs";
+@import "./pages/contact";
+@import "./pages/dashboard";
+
+@import "./sections/aboutSection";
+@import "./sections/cta";
+@import "./sections/footer";
+@import "./sections/hero";
+@import "./sections/navbar";
+@import "./sections/services";
+@import "./sections/testimonial";
+

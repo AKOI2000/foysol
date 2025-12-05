@@ -1,0 +1,22 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 900;
+
+
+    &_nav{
+        display: flex;
+        gap: 1.5rem;
+
+        &-links{
+            font-size: 1.6rem;
+            color: #000;
+        }
+    }
+
+}

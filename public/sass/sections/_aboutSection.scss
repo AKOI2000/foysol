@@ -1,0 +1,171 @@
+#about-section {
+  .img-box {
+    max-height: 520px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .col-2-by-1 {
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .about-section_cards {
+    .about-section_card {
+      border: 1px solid #ddd;
+      padding: 0 1rem 5rem;
+      border-radius: 8px;
+      box-shadow: 4px 6px 12px -1px rgba(0, 0, 0, 0.01);
+      -webkit-box-shadow: 4px 6px 12px -1px rgba(0, 0, 0, 0.01);
+      -moz-box-shadow: 4px 6px 12px -1px rgba(0, 0, 0, 0.01);
+
+      &-1{
+        .about-section_card-icon{
+          background-color: #F9BFC1;
+        }
+      }
+      &-2{
+        .about-section_card-icon{
+          background-color: #BDCEF6;
+        }
+      }
+      &-3{
+        .about-section_card-icon{
+          background-color: #FFEEC6;
+        }
+      }
+      &-4{
+        .about-section_card-icon{
+          background-color: #FFEEC6;
+        }
+      }
+
+      &-heading-box {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        margin-bottom: 1.5rem;
+      }
+
+      &-heading {
+        font-size: 1.8rem;
+      }
+
+      &-paragraph {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      &-icon {
+        // background-color: red;
+        padding: 2rem 3px 1rem;
+        -webkit-border-bottom-right-radius: 120px;
+        -webkit-border-bottom-left-radius: 120px;
+        -moz-border-radius-bottomright: 120px;
+        -moz-border-radius-bottomleft: 120px;
+        border-bottom-right-radius: 120px;
+        border-bottom-left-radius: 120px;
+      }
+    }
+  }
+}
+
+// .values {
+//     padding: 5rem 0;
+//     display: flex;
+//     flex-direction: column;
+//   .value {
+//     display: flex;
+//     width: 65%;
+//     justify-content: space-between;
+//     background: #F2F2F2;
+//     overflow: hidden;
+
+//     .heading-2{
+//         margin-bottom: 2rem;
+//     }
+//     .img-box{
+//         width: max-content;
+//     }
+//     .text-box{
+//         flex: 1;
+//         align-self: center;
+//         padding: 2rem 3rem;
+//         font-weight: 200;
+//         font-style: italic;
+//     }
+
+//     p{
+//         font-size: 2.2rem;
+//     }
+//   }
+
+//   .mission {
+//     align-self: flex-start;
+//     -webkit-border-top-left-radius: 150px;
+//     -webkit-border-bottom-left-radius: 150px;
+//     -moz-border-radius-topleft: 150px;
+//     -moz-border-radius-bottomleft: 150px;
+//     border-top-left-radius: 150px;
+//     border-bottom-left-radius: 150px;
+//     margin-bottom: 3rem;
+//   }
+
+//   .vision {
+//     align-self: flex-end;
+//     -webkit-border-top-right-radius: 150px;
+//     -webkit-border-bottom-right-radius: 150px;
+//     -moz-border-radius-toplight: 150px;
+//     -moz-border-radius-bottomright: 150px;
+//     border-top-right-radius: 150px;
+//     border-bottom-right-radius: 150px;
+//     .img-box{
+//         margin-right: -.5rem;
+//     }
+//   }
+// }
+
+
+// .why-foysol{
+//     .heading-2{
+//         text-align: center;
+//         margin-bottom: 4rem;
+//     }
+
+//     .col-2-by-2{
+//         column-gap: 3px;
+//         row-gap: 3px;
+//     }
+
+//     &-cell{
+//         display: flex;
+//         align-items: center;
+//         gap: 1rem;
+
+//         hr{
+//             height: .5px;
+//             flex: 1;
+//             border: 0;
+//             border-bottom: 2px dotted #000;
+//         }
+
+//         .img-box{
+//             width: 151px;
+//             height: 150px;
+//         }
+        
+//         p{
+//             font-size: 2.8rem;
+//             width: 50%;
+
+//             span{
+//                 color: red;
+//                 display: block;
+//             }
+//         }
+//     }
+
+
+// }

@@ -1,0 +1,29 @@
+.grid{
+    display: grid;
+}
+
+.col-2-by-1{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.col-2-by-2{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.col-3-by-2{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+
+.col-7-by-5{
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+}

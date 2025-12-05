@@ -1,0 +1,32 @@
+.service-card{
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to bottom, #2962E2, #EC3237);
+    }
+
+
+    &-img_box{
+        margin-bottom: 1rem;
+    }
+
+    &-heading{
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    p{
+        color: #756F6F;
+    }
+}
