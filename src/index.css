@@ -70,7 +70,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 @media (min-width: 2000px) {
   html {
@@ -85,6 +84,7 @@ html {
 
 body {
   font-family: "SF Pro Display";
+  overflow-x: hidden;
 }
 
 img {
@@ -263,10 +263,10 @@ p {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
 }
-
-.col-2-by-2 {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+@media (max-width: 608px) {
+  .col-2-by-1 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .col-3-by-2 {
@@ -274,6 +274,11 @@ p {
   grid-template-rows: repeat(2, 1fr);
   column-gap: 2rem;
   row-gap: 4rem;
+}
+@media (max-width: 608px) {
+  .col-3-by-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .col-7-by-5 {
@@ -361,6 +366,13 @@ p {
   align-items: center;
   border-radius: 1rem;
 }
+@media (max-width: 608px) {
+  #cta-section .cta-call {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: baseline;
+  }
+}
 #cta-section .cta-call p {
   font-weight: 400;
   font-size: 1.8rem;
@@ -376,14 +388,34 @@ p {
   background: #BDCEF6;
   border-radius: 1rem;
 }
+@media (max-width: 608px) {
+  #footer .newsletter {
+    flex-direction: column;
+  }
+}
 #footer .newsletter_text-box {
   width: 50%;
+}
+@media (max-width: 608px) {
+  #footer .newsletter_text-box br {
+    display: none;
+  }
+}
+@media (max-width: 608px) {
+  #footer .newsletter_text-box {
+    width: 100%;
+  }
 }
 #footer .newsletter_text-box p {
   margin-top: 1rem;
 }
 #footer .newsletter_form-box {
   width: 50%;
+}
+@media (max-width: 608px) {
+  #footer .newsletter_form-box {
+    width: 100%;
+  }
 }
 #footer .newsletter_form-box .newsletter-form {
   display: flex;
@@ -401,6 +433,11 @@ p {
   font-weight: 200;
   font-style: italic;
   font-family: "SF Pro Display";
+}
+@media (max-width: 608px) {
+  #footer .newsletter_form-box .newsletter-form input {
+    width: 100%;
+  }
 }
 #footer .newsletter_form-box .newsletter-form button {
   border: none;
@@ -448,10 +485,24 @@ p {
   align-items: center;
   gap: 3rem;
 }
+@media (max-width: 608px) {
+  #hero {
+    flex-direction: column;
+  }
+}
 #hero .hero-text {
   font-weight: 600;
   line-height: 1.2;
   flex-basis: 50%;
+}
+@media (max-width: 608px) {
+  #hero .hero-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 #hero .hero-paragraph {
   font-size: 2.2rem;

@@ -27,6 +27,12 @@
         align-items: center;
         border-radius: 1rem;
 
+        @include respond (mds) {
+            flex-direction: column;
+            gap: 2rem;
+            align-items: baseline;
+        }
+
         p{
             font-weight: 400;
             font-size: 1.8rem;

@@ -9,7 +9,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+
 
   @include lgrespond(xxxl) {
     font-size: 125%;
@@ -22,6 +22,7 @@ html {
 
 body{
   font-family: $font-text;
+    overflow-x: hidden;
 }
 
 img {

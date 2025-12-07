@@ -9,8 +9,24 @@
         background: #BDCEF6;
         border-radius: 1rem;
 
+        @include respond (mds) {
+            flex-direction: column;
+        }
+
         &_text-box{
-            width: 50%;    
+            width: 50%;
+
+        br{
+            @include respond (mds) {
+                display: none;
+            }
+    
+        }
+
+            @include respond (mds) {
+                width: 100%;
+            }
+    
 
             p{
                 margin-top: 1rem;
@@ -19,6 +35,11 @@
 
         &_form-box{
             width: 50%;
+
+            @include respond (mds) {
+                width: 100%;
+            }
+    
 
             .newsletter-form{
                 display: flex;
@@ -37,6 +58,12 @@
                         font-style: italic;
                         font-family: $font-text;
                     }
+
+
+                    @include respond (mds) {
+                        width: 100%;
+                    }
+            
                 }
 
                 button{
