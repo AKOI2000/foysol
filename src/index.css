@@ -162,10 +162,20 @@ p {
   height: max-content;
   padding: 1.5rem 2rem;
 }
+@media (max-width: 608px) {
+  .btn {
+    padding: 1.5rem;
+  }
+}
 .btn-main {
   color: #fff;
   background: #2962E2;
   font-size: 2rem;
+}
+@media (max-width: 608px) {
+  .btn-main {
+    font-size: 1.6rem;
+  }
 }
 
 .container {

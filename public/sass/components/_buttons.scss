@@ -4,9 +4,17 @@
     height: max-content;
     padding: 1.5rem 2rem;
 
+    @include respond (mds) {
+        padding: 1.5rem;
+    }
+
     &-main{
         color: #fff;
         background: #2962E2;
         font-size: 2rem;
+
+        @include respond(mds) {
+            font-size: 1.6rem;
+        }
     }
 }
