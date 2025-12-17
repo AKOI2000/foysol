@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -9,21 +10,15 @@ function Navbar() {
       </div>
 
       <nav className={`navbar_nav ${isActive ? "active" : ""}`}>
-        <a href="" className="navbar_nav-links">
+        <NavLink to="/" className="navbar_nav-links">
           Home
-        </a>
-        <a href="#" className="navbar_nav-links">
+        </NavLink>
+        <NavLink to="/about" className="navbar_nav-links">
           About
-        </a>
-        <a href="#" className="navbar_nav-links">
-          Leadership
-        </a>
-        <a href="#" className="navbar_nav-links">
-          Services
-        </a>
-        <a href="#" className="navbar_nav-links">
+        </NavLink>
+        <NavLink to="/contact" className="navbar_nav-links">
           Contact
-        </a>
+        </NavLink>
       </nav>
 
       <div className="navbar_cta">

@@ -11,6 +11,15 @@
     }
 }
 
+.col-2_5-by-1{
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+
+    @include respond (mds) {
+        grid-template-columns: 1fr;
+    }
+}
+
 // .col-2-by-2{
 //     grid-template-columns: repeat(2, 1fr);
 //     grid-template-rows: repeat(2, 1fr);

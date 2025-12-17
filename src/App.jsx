@@ -1,24 +1,21 @@
-import AboutSection from "./sections/AboutSection"
-import Cta from "./sections/Cta"
-import Footer from "./sections/Footer"
-import Hero from "./sections/Hero"
-import Navbar from "./sections/Navbar"
-import Services from "./sections/Services"
-import Testimonial from "./sections/Testimonial"
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+
 
 function App() {
 
   return (
     <>
-      <div>
-        <Navbar />
-        <Hero />
-        <AboutSection />
-        <Services />
-        <Testimonial />
-        <Cta />
-        <Footer />
-      </div>
+     <Routes>
+      <Route path="/" element={ <Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+     </Routes>
+
+      {/* <Home /> */}
+     {/* <About /> */}
     </>
   )
 }

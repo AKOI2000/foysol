@@ -40,7 +40,7 @@ function Testimonial() {
           <div className="testimonial-text-card">
             <div className="section-heading">
               <h5 className="heading-label">Testimonials</h5>
-              <h2 className="heading-2">Trusted by Leaders <span>from different industries</span></h2>
+              <h2 className="heading-2">Trusted by Leaders <span>from various industries</span></h2>
             </div>
 
             <p>Discover how our advisory solutions have helped businesses gain clarity, reduce risk, and make confident decisions.</p>
