@@ -1,4 +1,4 @@
-import AboutGrid from "../components/aboutGrid";
+import AboutGrid from "../components/AboutGrid";
 
 
 function AboutSection() {
