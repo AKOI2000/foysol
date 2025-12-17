@@ -1,4 +1,4 @@
-import AboutGrid from "../components/aboutGrid";
+import AboutGrid from "../components/AboutGrid";
 import Footer from "../sections/Footer";
 import Navbar from "../sections/Navbar";
 
