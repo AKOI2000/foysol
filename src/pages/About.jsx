@@ -7,7 +7,7 @@ function About() {
     <div id="about">
       <Navbar />
       <div className="sub-hero">
-        <img src="../../public/about-subhero.png" alt="" />
+        <img src="/about-subhero.png" alt="" />
         <h1 className="sub-hero_text heading-2">
           Home<span>/About Us</span>
         </h1>
@@ -49,14 +49,14 @@ function About() {
             </div>
           </div>
           <div className="grid col-2-by-1">
-                <img src="../../public/story-1.png" alt="" />
-                <img src="../../public/story-2.png" alt="" />
+                <img src="/story-1.png" alt="" />
+                <img src="/story-2.png" alt="" />
             </div>
         </div>
 
         <div className="grid col-2-by-1">
           <div className="img-box">
-            <img src="../../public/about-stats.png" alt="" />
+            <img src="/about-stats.png" alt="" />
           </div>
 
           <div className="text-box">
