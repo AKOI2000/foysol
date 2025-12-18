@@ -141,6 +141,11 @@ p {
 .sub-hero_text span {
   color: #2962E2;
 }
+@media (max-width: 480px) {
+  .sub-hero_text.heading-2 {
+    font-size: 2.7rem;
+  }
+}
 
 .heading-label {
   background-color: rgba(234, 239, 252, 0.7333333333);

@@ -7,7 +7,7 @@ function About() {
     <div id="about">
       <Navbar />
       <div className="sub-hero">
-        <img src="/about-subhero.png" alt="" />
+        <img src="/about-subhero.png" alt="" loading="lazy"/>
         <h1 className="sub-hero_text heading-2">
           Home<span>/About Us</span>
         </h1>

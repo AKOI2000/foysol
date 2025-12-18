@@ -11,7 +11,7 @@ function Hero() {
                 <a href="#" className="btn btn-main">Book a Consultation</a>
             </div>
             <div className="hero-image">
-                <img src="/Right Side.png" alt="" />
+                <img src="/Right Side.png" alt="" loading="lazy"/>
             </div>
         </div>
     )
