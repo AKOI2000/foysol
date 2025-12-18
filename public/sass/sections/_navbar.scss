@@ -40,6 +40,10 @@
                 padding: 1rem;
             }
         }
+
+        &-links.active{
+          color: #2962E2;
+        }
     }
 
     &_nav.active{

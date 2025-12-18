@@ -9,7 +9,7 @@ function Contact() {
       <div className="sub-hero">
         <img src="/about-subhero.png" alt="" />
         <h1 className="sub-hero_text heading-2">
-          Home<span>/About Us</span>
+          Home<span>/Contact</span>
         </h1>
       </div>
 

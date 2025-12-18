@@ -1,6 +1,7 @@
 .story_text-box{
     position: relative;
     padding-left: 2rem;
+    align-self: center;
 
     &::before{
         content: "";
@@ -14,6 +15,24 @@
 
     .text-flex{
         display: flex;
+        gap: 5px;
+
+        .heading-2{
+            margin-bottom: 1rem;
+            font-size: 3.3rem;
+
+            @include respond (lg) {
+                font-size: 2.6rem;
+            }
+
+            @include respond (mds) {
+                font-size: 3.6rem;
+            }
+
+            span{
+                color: #EC3237;
+            }
+        }
     }
 }
 

@@ -2,11 +2,11 @@
     padding: 7rem 10rem;
   
     @include respond(lg) {
-      padding: 7rem 6rem;
+      padding: 7rem 5rem;
     }
   
     @include respond(mdl) {
-      padding: 7rem 5rem;
+      padding: 7rem 4rem;
     }
   
     @include respond(mds) {

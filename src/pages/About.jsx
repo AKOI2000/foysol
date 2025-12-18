@@ -29,7 +29,8 @@ function About() {
       <div className="container">
         <h5 className="heading-label">Our Story</h5>
 
-        <div className="grid col-2-by-1 margin-bottom-sm">
+        <div className="grid col-1-by-2">
+        <div className="grid col-2-by-1">
           <div className="story_text-box">
             <div className="text-flex">
               <h2 className="heading-2">Your Risks.</h2>
@@ -91,6 +92,7 @@ function About() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <Footer />
