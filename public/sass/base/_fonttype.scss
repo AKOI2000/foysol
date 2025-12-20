@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Heavy'), local('SFProDisplay-Heavy'),
-        url('./Fonts/subset-SFProDisplay-Heavy.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Heavy.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -10,7 +11,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Bold'), local('SFProDisplay-Bold'),
-        url('./Fonts/subset-SFProDisplay-Bold.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Bold.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -19,7 +21,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Black'), local('SFProDisplay-Black'),
-        url('./Fonts/subset-SFProDisplay-Black.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Black.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -28,7 +31,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Light'), local('SFProDisplay-Light'),
-        url('./Fonts/subset-SFProDisplay-Light.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Light.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -37,7 +41,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Medium'), local('SFProDisplay-Medium'),
-        url('./Fonts/subset-SFProDisplay-Medium.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Medium.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -46,7 +51,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
-        url('./Fonts/subset-SFProDisplay-Regular.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Regular.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -55,7 +61,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Semibold'), local('SFProDisplay-Semibold'),
-        url('./Fonts/subset-SFProDisplay-Semibold.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Semibold.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -64,7 +71,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Thin'), local('SFProDisplay-Thin'),
-        url('./Fonts/subset-SFProDisplay-Thin.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Thin.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -73,7 +81,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Ultralight'), local('SFProDisplay-Ultralight'),
-        url('./Fonts/subset-SFProDisplay-Ultralight.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Ultralight.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Ultralight.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -82,7 +91,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Medium'), local('SFProDisplay-Medium'),
-        url('./Fonts/subset-SFProDisplay-Medium.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Medium.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -91,7 +101,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Bold'), local('SFProDisplay-Bold'),
-        url('./Fonts/subset-SFProDisplay-Bold.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Bold.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -100,7 +111,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Light'), local('SFProDisplay-Light'),
-        url('./Fonts/subset-SFProDisplay-Light.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Light.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -109,7 +121,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
-        url('./Fonts/subset-SFProDisplay-Regular.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Regular.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -118,7 +131,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Thin'), local('SFProDisplay-Thin'),
-        url('./Fonts/subset-SFProDisplay-Thin.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Thin.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -127,7 +141,8 @@
 @font-face {
     font-family: 'SFProDisplay';
     src: local('SFProDisplay Ultralight'), local('SFProDisplay-Ultralight'),
-        url('./Fonts/subset-SFProDisplay-Ultralight.woff2') format('woff2');
+        url('./Fonts/subset-SFProDisplay-Ultralight.woff2') format('woff2'),
+        url('./Fonts/subset-SFProDisplay-Ultralight.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
