@@ -25,6 +25,20 @@
 }
 @font-face {
   font-family: "SFProDisplay";
+  src: local("SFProDisplay Light"), local("SFProDisplay-Light"), url("./Fonts/subset-SFProDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Medium"), local("SFProDisplay-Medium"), url("./Fonts/subset-SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
   src: local("SFProDisplay Regular"), local("SFProDisplay-Regular"), url("./Fonts/subset-SFProDisplay-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -39,6 +53,20 @@
 }
 @font-face {
   font-family: "SFProDisplay";
+  src: local("SFProDisplay Thin"), local("SFProDisplay-Thin"), url("./Fonts/subset-SFProDisplay-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Ultralight"), local("SFProDisplay-Ultralight"), url("./Fonts/subset-SFProDisplay-Ultralight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
   src: local("SFProDisplay Medium"), local("SFProDisplay-Medium"), url("./Fonts/subset-SFProDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -46,8 +74,36 @@
 }
 @font-face {
   font-family: "SFProDisplay";
+  src: local("SFProDisplay Bold"), local("SFProDisplay-Bold"), url("./Fonts/subset-SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
   src: local("SFProDisplay Light"), local("SFProDisplay-Light"), url("./Fonts/subset-SFProDisplay-Light.woff2") format("woff2");
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Regular"), local("SFProDisplay-Regular"), url("./Fonts/subset-SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Thin"), local("SFProDisplay-Thin"), url("./Fonts/subset-SFProDisplay-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Ultralight"), local("SFProDisplay-Ultralight"), url("./Fonts/subset-SFProDisplay-Ultralight.woff2") format("woff2");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
