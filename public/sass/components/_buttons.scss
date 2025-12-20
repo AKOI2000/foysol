@@ -12,6 +12,11 @@
         color: #fff;
         background: #2962E2;
         font-size: 2rem;
+        transition: all .2s ease;
+
+        &:hover{
+            filter: brightness(0.80);
+        }
 
         @include respond(mds) {
             font-size: 1.6rem;

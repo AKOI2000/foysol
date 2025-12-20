@@ -3,66 +3,52 @@
 }
 
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-BlackItalic.woff2") format("woff2"), url("../../Fonts/SFProDisplay-BlackItalic.woff") format("woff");
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Heavy"), local("SFProDisplay-Heavy"), url("./Fonts/subset-SFProDisplay-Heavy.woff2") format("woff2");
   font-weight: 900;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-HeavyItalic.woff2") format("woff2"), url("../../Fonts/SFProDisplay-HeavyItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../../Fonts/SFProDisplay-Bold.woff") format("woff");
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Bold"), local("SFProDisplay-Bold"), url("./Fonts/subset-SFProDisplay-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-ThinItalic.woff2") format("woff2"), url("../../Fonts/SFProDisplay-ThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Black"), local("SFProDisplay-Black"), url("./Fonts/subset-SFProDisplay-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../../Fonts/SFProDisplay-Regular.woff") format("woff");
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Regular"), local("SFProDisplay-Regular"), url("./Fonts/subset-SFProDisplay-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../../Fonts/SFProDisplay-Medium.woff") format("woff");
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Semibold"), local("SFProDisplay-Semibold"), url("./Fonts/subset-SFProDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Medium"), local("SFProDisplay-Medium"), url("./Fonts/subset-SFProDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-UltralightItalic.woff2") format("woff2"), url("../../Fonts/SFProDisplay-UltralightItalic.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-SemiboldItalic.woff2") format("woff2"), url("../../Fonts/SFProDisplay-SemiboldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("../../Fonts/SFProDisplay-LightItalic.woff2") format("woff2"), url("../../Fonts/SFProDisplay-LightItalic.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay Light"), local("SFProDisplay-Light"), url("./Fonts/subset-SFProDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
 * {
@@ -87,7 +73,7 @@ html {
 }
 
 body {
-  font-family: "SF Pro Display";
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SFProDisplay", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -123,8 +109,7 @@ a {
 }
 
 p {
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 300;
   font-size: 1.6rem;
 }
 
@@ -182,6 +167,10 @@ p {
   color: #fff;
   background: #2962E2;
   font-size: 2rem;
+  transition: all 0.2s ease;
+}
+.btn-main:hover {
+  filter: brightness(0.8);
 }
 @media (max-width: 608px) {
   .btn-main {
@@ -443,7 +432,7 @@ p {
   border: 1px solid #737373;
 }
 #contact .contact-form input:placeholder-shown, #contact .contact-form textarea:placeholder-shown {
-  font-family: "SF Pro Display";
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SFProDisplay", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 #contact .contact-form textarea {
@@ -452,6 +441,14 @@ p {
 }
 #contact .contact-form .btn {
   width: 100%;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+@media (max-width: 608px) {
+  #contact .contact-form .btn {
+    font-size: 1.6rem;
+  }
 }
 
 #about-section .img-box {
@@ -517,7 +514,6 @@ p {
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 300;
-  font-style: italic;
 }
 .about-section_cards .about-section_card-icon {
   padding: 2rem 3px 1rem;
@@ -620,7 +616,7 @@ p {
   font-size: 1.4rem;
   font-weight: 200;
   font-style: italic;
-  font-family: "SF Pro Display";
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SFProDisplay", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 @media (max-width: 608px) {
   #footer .newsletter_form-box .newsletter-form input {
@@ -654,7 +650,6 @@ p {
   font-weight: 200;
   color: #000;
   font-size: 1.6rem;
-  font-style: italic;
 }
 #footer .footer-box .footer_links-link:not(:last-child) {
   margin-bottom: 0.5rem;
