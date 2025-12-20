@@ -73,7 +73,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SFProDisplay", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "SFProDisplay";
   overflow-x: hidden;
 }
 
@@ -432,7 +432,7 @@ p {
   border: 1px solid #737373;
 }
 #contact .contact-form input:placeholder-shown, #contact .contact-form textarea:placeholder-shown {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SFProDisplay", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "SFProDisplay";
   text-transform: uppercase;
 }
 #contact .contact-form textarea {
@@ -616,7 +616,7 @@ p {
   font-size: 1.4rem;
   font-weight: 200;
   font-style: italic;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SFProDisplay", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "SFProDisplay";
 }
 @media (max-width: 608px) {
   #footer .newsletter_form-box .newsletter-form input {
