@@ -1,15 +1,18 @@
-import { act, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function ConsultationPopup({ setOnclick, onClick }) {
   const [active, setActive] = useState(false);
 
 
-    if (onClick) {
-      setTimeout(() => {
-        setActive(active => !active)
-      }, 100);
-    }
-  
+  useEffect(() => {
+    if (!onClick) return;
+
+    const timer = setTimeout(() => {
+      setActive(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [onClick]);
   return (
     <div className="modal-bg">
       <form action="" className={`modal ${active ? "active" : ""}`}>
