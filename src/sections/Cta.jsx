@@ -1,4 +1,4 @@
-function Cta() {
+function Cta({setOnclick}) {
     return (
         <section id="cta-section">
             <div className="container">
@@ -9,7 +9,7 @@ function Cta() {
 
                 <div className="cta-call">
                     <p>Let’s help you protect your organization and unlock growth.</p>
-                    <a href="#" className="btn btn-main">Book a Strategy session</a>
+                    <a className="btn btn-main" onClick={()=> setOnclick(onClick => !onClick)}>Book a Strategy session</a>
                 </div>
             </div>
             

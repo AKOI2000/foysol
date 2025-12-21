@@ -148,6 +148,14 @@ a {
   display: inline-block;
 }
 
+button {
+  border: none;
+}
+
+input, textarea {
+  font-family: "SFProDisplay";
+}
+
 .heading-1 {
   font-size: 4.8rem;
 }
@@ -213,6 +221,7 @@ p {
   font-weight: 400;
   height: max-content;
   padding: 1.5rem 2rem;
+  cursor: pointer;
 }
 @media (max-width: 608px) {
   .btn {
@@ -221,7 +230,7 @@ p {
 }
 .btn-main {
   color: #fff;
-  background: #2962E2;
+  background: #2962e2;
   font-size: 2rem;
   transition: all 0.2s ease;
 }
@@ -232,6 +241,102 @@ p {
   .btn-main {
     font-size: 1.6rem;
   }
+}
+.btn-back {
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+}
+@media (max-width: 768px) {
+  .btn-back {
+    top: 5%;
+  }
+}
+@media (max-width: 608px) {
+  .btn-back {
+    top: 4%;
+  }
+}
+@media (max-width: 360px) {
+  .btn-back {
+    top: 3%;
+    right: 3%;
+  }
+}
+.btn-back span {
+  display: block;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s;
+}
+.btn-back .span-1 {
+  transform: translateY(10px) rotate(45deg);
+}
+.btn-back .span-2 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-bg .modal.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.modal-bg .modal {
+  transform: scale(0);
+  opacity: 0;
+  padding: 6rem 3rem;
+  width: 60%;
+  background: white;
+  position: relative;
+  transition: all 0.7s ease;
+}
+@media (max-width: 608px) {
+  .modal-bg .modal {
+    width: 80%;
+    padding: 6rem 2rem;
+  }
+}
+.modal-bg .modal input, .modal-bg .modal textarea, .modal-bg .modal .btn {
+  width: 100%;
+}
+.modal-bg .modal p {
+  margin-bottom: 2rem;
+}
+.modal-bg .modal input {
+  margin-bottom: 3rem;
+  height: 4.4rem;
+}
+.modal-bg .modal input, .modal-bg .modal textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #737373;
+}
+.modal-bg .modal input:placeholder-shown, .modal-bg .modal textarea:placeholder-shown {
+  font-family: "SFProDisplay";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.modal-bg .modal textarea {
+  height: 15.8rem;
+  margin-bottom: 3rem;
 }
 
 .container {
@@ -489,6 +594,7 @@ p {
 }
 #contact .contact-form input:placeholder-shown, #contact .contact-form textarea:placeholder-shown {
   font-family: "SFProDisplay";
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 #contact .contact-form textarea {
@@ -670,8 +776,7 @@ p {
 }
 #footer .newsletter_form-box .newsletter-form input:placeholder-shown {
   font-size: 1.4rem;
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 300;
   font-family: "SFProDisplay";
 }
 @media (max-width: 608px) {
@@ -717,7 +822,17 @@ p {
   margin-top: 2rem;
 }
 #footer .footer-copyrights p {
-  font-weight: 500;
+  font-weight: 400;
+}
+@media (max-width: 608px) {
+  #footer .footer-copyrights p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 360px) {
+  #footer .footer-copyrights p {
+    font-size: 1.3rem;
+  }
 }
 
 #footer.container {

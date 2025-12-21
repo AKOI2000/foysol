@@ -1,11 +1,12 @@
+import ConsultationPopup from "../components/ConsultationPopup";
 import Footer from "../sections/Footer";
 import Navbar from "../sections/Navbar";
 
-function Contact() {
+function Contact({setOnclick, onClick}) {
   return (
     <div id="contact">
-      <Navbar />
-
+      <Navbar setOnclick={setOnclick}/>
+        {onClick && <ConsultationPopup onClick={onClick} setOnclick={setOnclick}/>}
       <div className="sub-hero">
         <img src="/about-subhero.png" alt="" loading="lazy"/>
         <h1 className="sub-hero_text heading-2">

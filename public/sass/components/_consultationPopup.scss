@@ -1,0 +1,66 @@
+.modal-bg{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+   backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal.active{
+       transform: scale(1);
+       opacity: 1;
+    }
+
+
+    .modal{
+        transform: scale(0);
+        opacity: 0;
+        padding: 6rem 3rem;
+        width: 60%;
+        background: white;
+        position: relative;
+        transition: all .7s ease;
+
+        @include respond (mds) {
+            width: 80%;
+            padding: 6rem 2rem;
+        }
+
+        input, textarea, .btn{
+            width: 100%;
+        }
+
+        p{
+            margin-bottom: 2rem;
+        }
+
+        input{
+            margin-bottom: 3rem;
+            height: 4.4rem;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 1px solid #737373;
+
+            &:placeholder-shown{
+                font-family: $font-text;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        textarea{
+            height: 15.8rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+
+}

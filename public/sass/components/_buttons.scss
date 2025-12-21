@@ -1,25 +1,65 @@
-.btn{
-    border-radius: 8px;
-    font-weight: 400;
-    height: max-content;
-    padding: 1.5rem 2rem;
+.btn {
+  border-radius: 8px;
+  font-weight: 400;
+  height: max-content;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+
+  @include respond(mds) {
+    padding: 1.5rem;
+  }
+
+  &-main {
+    color: #fff;
+    background: #2962e2;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    @include respond(mds) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-back {
+    width: 32px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+
+    @include respond (md) {
+      top: 5%;
+    }
 
     @include respond (mds) {
-        padding: 1.5rem;
+      top: 4%;
     }
 
-    &-main{
-        color: #fff;
-        background: #2962E2;
-        font-size: 2rem;
-        transition: all .2s ease;
-
-        &:hover{
-            filter: brightness(0.80);
-        }
-
-        @include respond(mds) {
-            font-size: 1.6rem;
-        }
+    @include respond (xs) {
+      top: 3%;
+      right: 3%;
     }
+
+    span {
+      display: block;
+      height: 3px;
+      background-color: #000;
+      transition: all 0.3s;
+    }
+
+    .span-1 {
+      transform: translateY(10px) rotate(45deg);
+    }
+    .span-2 {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
 }

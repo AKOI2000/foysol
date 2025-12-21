@@ -1,11 +1,16 @@
+
 import AboutGrid from "../components/AboutGrid";
+import ConsultationPopup from "../components/ConsultationPopup";
 import Footer from "../sections/Footer";
 import Navbar from "../sections/Navbar";
 
-function About() {
+function About({setOnclick, onClick}) {
+
+
   return (
     <div id="about">
-      <Navbar />
+      <Navbar setOnclick={setOnclick}/>
+      {onClick && <ConsultationPopup onClick={onClick} setOnclick={setOnclick}/>}
       <div className="sub-hero">
         <img src="/about-subhero.png" alt="" loading="lazy"/>
         <h1 className="sub-hero_text heading-2">

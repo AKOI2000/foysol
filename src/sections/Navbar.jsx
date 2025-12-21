@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Navbar({setOnclick}) {
   const [isActive, setIsActive] = useState(false);
+  
   return (
     <div className="navbar nav-container">
       <div className="navbar_logo-box">
@@ -22,7 +23,7 @@ function Navbar() {
       </nav>
 
       <div className="navbar_cta">
-        <a href="" className="btn btn-main">
+        <a className="btn btn-main" onClick={()=> setOnclick(onClick => !onClick)}>
           Book a consultation
         </a>
         <div
