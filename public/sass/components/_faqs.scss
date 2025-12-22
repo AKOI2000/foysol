@@ -1,0 +1,128 @@
+#faqs {
+  .faq-questions {
+    display: grid;
+    gap: 1rem;
+
+    .faq-question {
+      border: 0.5px solid #000000;
+      border-radius: 1rem;
+
+      &-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem 1.5rem;
+        cursor: pointer; // for mobile
+      }
+
+      &-body {
+        // MOBILE ACCORDION DEFAULT
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+       
+      }
+
+      &.active &-body {
+        max-height: 500px; // adjust to content
+        opacity: 1;
+      }
+    }
+  }
+
+  .faq-answers {
+    border: 0.5px solid #000000;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+
+    .heading-2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .faq-answer-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .faq-answer {
+      animation: faqFadeSlide 0.8s ease forwards;
+    }
+  }
+}
+
+@keyframes faqFadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    #faqs {  
+      .faq-questions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+  
+        .faq-question {
+          &-body {
+            display: none; // hide inline body on desktop
+          }
+        }
+      }
+  
+      .faq-answers {
+        display: block; // right panel always visible
+      }
+    }
+  }
+
+
+  @media (hover: none) and (pointer: coarse) {
+    #faqs {
+    
+        .faq-questions{
+            .faq-question{
+                &.active .faq-question-heading .faq-arrow {
+                    transform: rotate(90deg); // points right -> down
+                }
+
+                &.active .faq-question-body {
+                    max-height: 500px; // adjust for your content
+                    opacity: 1;
+                    padding: 2rem 1.5rem;
+                  }
+
+                .faq-question-heading{
+                    .faq-arrow {
+                        transition: transform 0.3s ease;
+                      }
+                }
+
+                .faq-question-body {
+                    max-height: 0;
+                    overflow: hidden;
+                    opacity: 0;
+                    padding: 0 1.5rem;
+                    transition: all .3s ease;
+                }
+            }
+        }
+
+      .col-2-by-1{
+        grid-template-columns: 1fr;
+      }
+      .faq-answers {
+        display: none; // hide desktop panel
+      }
+    }
+  }
+  

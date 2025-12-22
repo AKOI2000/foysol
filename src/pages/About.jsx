@@ -1,6 +1,7 @@
 
 import AboutGrid from "../components/AboutGrid";
 import ConsultationPopup from "../components/ConsultationPopup";
+import FAQs from "../components/FAQs";
 import Footer from "../sections/Footer";
 import Navbar from "../sections/Navbar";
 
@@ -99,6 +100,10 @@ function About({setOnclick, onClick}) {
           </div>
         </div>
         </div>
+      </div>
+
+      <div className="container">
+        <FAQs />
       </div>
       <Footer />
     </div>
