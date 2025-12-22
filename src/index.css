@@ -646,7 +646,7 @@ p {
   margin-bottom: auto;
 }
 #about .text-box .about-stats-box {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 #about .text-box .about-stats-box .about-stat .heading-2 {
   color: #2962E2;
@@ -655,6 +655,16 @@ p {
 #about .text-box .about-stats-box .about-stat .heading-4.span {
   color: black;
   font-weight: 400;
+}
+@media (max-width: 608px) {
+  #about .text-box .about-stats-box .about-stat .heading-4.span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  #about .text-box .about-stats-box .about-stat .heading-4.span {
+    font-size: 1.8rem;
+  }
 }
 #about .grid.col-2-by-1 {
   column-gap: 1rem;
