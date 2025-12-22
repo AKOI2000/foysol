@@ -999,6 +999,9 @@ p {
   background-color: #fff;
   z-index: 900;
 }
+.navbar_logo-box {
+  max-width: 5.8rem;
+}
 .navbar_nav {
   display: flex;
   gap: 1.5rem;
