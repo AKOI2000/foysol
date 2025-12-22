@@ -11,7 +11,7 @@ function Home({setOnclick, onClick}) {
   return (
     <div>
       <Navbar  setOnclick={setOnclick}/>
-      {onClick && <ConsultationPopup onClick={onClick} setOnclick={setOnclick}/>}
+     <ConsultationPopup onClick={onClick} setOnclick={setOnclick}/>
       <Hero  setOnclick={setOnclick}/>
       <AboutSection />
       <Services />

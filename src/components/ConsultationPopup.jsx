@@ -2,19 +2,21 @@ import { useEffect, useState } from "react";
 
 function ConsultationPopup({ setOnclick, onClick }) {
   const [active, setActive] = useState(false);
-
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!onClick) return;
-
-    const timer = setTimeout(() => {
-      setActive(true);
-    }, 100);
-
-    return () => clearTimeout(timer);
+    if (onClick) {
+      setVisible(true);
+      setTimeout(() => setActive(true), 100);
+    } else {
+      setActive(false);
+      setTimeout(() => setVisible(false), 700); // match SCSS transition
+    }
   }, [onClick]);
+  
+  if (!visible) return null;
   return (
-    <div className="modal-bg">
+    <div className={`modal-bg ${active ? "active" : ""}`}>
       <form action="" className={`modal ${active ? "active" : ""}`}>
         <h3 className="heading-3">Request Consultation</h3>
         <p>

@@ -6,7 +6,7 @@ function Contact({setOnclick, onClick}) {
   return (
     <div id="contact">
       <Navbar setOnclick={setOnclick}/>
-        {onClick && <ConsultationPopup onClick={onClick} setOnclick={setOnclick}/>}
+      <ConsultationPopup onClick={onClick} setOnclick={setOnclick}/>
       <div className="sub-hero">
         <img src="/about-subhero.png" alt="" loading="lazy"/>
         <h1 className="sub-hero_text heading-2">

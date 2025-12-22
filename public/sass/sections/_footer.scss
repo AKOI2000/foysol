@@ -2,7 +2,7 @@
     .newsletter{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
         gap: 5rem;
         margin-bottom: 3rem;
         padding: 7rem 4rem;
@@ -12,6 +12,10 @@
         @include respond (mds) {
             flex-direction: column;
             padding: 7rem 3rem;
+        }
+
+        @include respond (sm) {
+            padding: 7rem 2.5rem;
         }
 
         &_text-box{
@@ -52,6 +56,11 @@
                     border: none;
                     border-radius: 1rem;
                     padding: 0 2rem;
+
+                    @include respond (sm) {
+                        padding: 0 1.5rem;
+                    }
+            
                     
                     &:placeholder-shown{
                         font-size: 1.4rem;

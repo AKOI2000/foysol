@@ -293,6 +293,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s ease;
+}
+.modal-bg.active {
+  opacity: 1;
+  visibility: visible;
 }
 .modal-bg .modal.active {
   transform: scale(1);
@@ -726,7 +733,7 @@ p {
 #footer .newsletter {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   gap: 5rem;
   margin-bottom: 3rem;
   padding: 7rem 4rem;
@@ -737,6 +744,11 @@ p {
   #footer .newsletter {
     flex-direction: column;
     padding: 7rem 3rem;
+  }
+}
+@media (max-width: 480px) {
+  #footer .newsletter {
+    padding: 7rem 2.5rem;
   }
 }
 #footer .newsletter_text-box {
@@ -773,6 +785,11 @@ p {
   border: none;
   border-radius: 1rem;
   padding: 0 2rem;
+}
+@media (max-width: 480px) {
+  #footer .newsletter_form-box .newsletter-form input {
+    padding: 0 1.5rem;
+  }
 }
 #footer .newsletter_form-box .newsletter-form input:placeholder-shown {
   font-size: 1.4rem;

@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Navbar({setOnclick}) {
   const [isActive, setIsActive] = useState(false);
   
   return (
     <div className="navbar nav-container">
-      <div className="navbar_logo-box">
+      <Link to="/" className="navbar_logo-box">
         <img src="/Logo.png" alt="" />
-      </div>
+      </Link>
 
       <nav className={`navbar_nav ${isActive ? "active" : ""}`}>
         <NavLink to="/" className="navbar_nav-links">
