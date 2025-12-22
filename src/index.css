@@ -640,6 +640,11 @@ p {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 608px) {
+  #about .text-box {
+    padding: 8% 2% 1%;
+  }
+}
 #about .text-box .heading-4 {
   font-weight: 500;
   line-height: 1.5;

@@ -81,6 +81,10 @@
         display: flex;
         flex-direction: column;
 
+        @include respond (mds) {
+            padding: 8% 2% 1%;
+        }
+
         .heading-4{
             font-weight: 500;
             line-height: 1.5;
