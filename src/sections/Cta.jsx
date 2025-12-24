@@ -1,4 +1,7 @@
-function Cta({setOnclick}) {
+import { useConsultation } from "../context/consultationContext"
+
+function Cta() {
+    const {setOnclick} = useConsultation();
     return (
         <section id="cta-section">
             <div className="container">

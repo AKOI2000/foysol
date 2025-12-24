@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useConsultation } from "../context/consultationContext";
 
-function ConsultationPopup({ setOnclick, onClick }) {
+function ConsultationPopup() {
+  const { setOnclick, onClick } = useConsultation();
   const [active, setActive] = useState(false);
   const [visible, setVisible] = useState(false);
   

@@ -7,13 +7,12 @@ import { useState } from "react"
 
 
 function App() {
-  const [onClick, setOnclick] = useState(false)
   return (
     <>
      <Routes>
-      <Route path="/" element={ <Home onClick={onClick} setOnclick={setOnclick}/>} />
-      <Route path="/about" element={<About onClick={onClick} setOnclick={setOnclick}/>} />
-      <Route path="/contact" element={<Contact onClick={onClick} setOnclick={setOnclick}/>} />
+      <Route path="/" element={ <Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
      </Routes>
 
       {/* <Home /> */}

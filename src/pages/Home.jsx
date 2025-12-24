@@ -7,16 +7,16 @@ import Navbar from "../sections/Navbar"
 import Services from "../sections/Services"
 import Testimonial from "../sections/Testimonial"
 
-function Home({setOnclick, onClick}) {
+function Home() {
   return (
     <div>
-      <Navbar  setOnclick={setOnclick}/>
-     <ConsultationPopup onClick={onClick} setOnclick={setOnclick}/>
-      <Hero  setOnclick={setOnclick}/>
+      <Navbar />
+     <ConsultationPopup/>
+      <Hero />
       <AboutSection />
       <Services />
       <Testimonial />
-      <Cta  setOnclick={setOnclick}/>
+      <Cta />
       <Footer/>
     </div>
   );

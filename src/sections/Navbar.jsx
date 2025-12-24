@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { useConsultation } from "../context/consultationContext";
 
-function Navbar({setOnclick}) {
+function Navbar() {
+  const {setOnclick} = useConsultation()
   const [isActive, setIsActive] = useState(false);
   
   return (

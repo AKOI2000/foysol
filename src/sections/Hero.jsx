@@ -1,4 +1,7 @@
-function Hero({setOnclick}) {
+import { useConsultation } from "../context/consultationContext"
+
+function Hero() {
+    const {setOnclick} = useConsultation();
     return (
         <div id="hero" className="container">
             <div className="hero-text">
