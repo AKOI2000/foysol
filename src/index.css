@@ -351,7 +351,7 @@ p {
   gap: 1rem;
 }
 #faqs .faq-questions .faq-question {
-  border: 0.5px solid #000000;
+  border: 0.2px solid rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
 }
 #faqs .faq-questions .faq-question-heading {
@@ -373,7 +373,7 @@ p {
   opacity: 1;
 }
 #faqs .faq-answers {
-  border: 0.5px solid #000000;
+  border: 0.2px solid rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   padding: 2rem 1rem;
 }
