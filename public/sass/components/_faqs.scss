@@ -73,6 +73,10 @@
         gap: 1rem;
   
         .faq-question {
+          transition: all .2s ease;
+          &:hover{
+            background-color: #EAEFFC;
+          }
           &-body {
             display: none; // hide inline body on desktop
           }
