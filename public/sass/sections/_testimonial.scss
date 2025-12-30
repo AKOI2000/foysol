@@ -186,6 +186,10 @@
         padding: 0 2rem;
       }
 
+      @include respond(mds) {
+        width: 393px;
+      }
+
       @include respond(xs) {
         width: 100vw;
       }
@@ -211,7 +215,7 @@
         }
 
         @include respond(sm) {
-          width: 100vw;
+          width: 90vw;
         }
 
         @include respond(xs) {

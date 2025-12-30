@@ -1314,6 +1314,11 @@ p {
     padding: 0 2rem;
   }
 }
+@media (max-width: 608px) {
+  #testimonials .horizontal-container .panel {
+    width: 393px;
+  }
+}
 @media (max-width: 360px) {
   #testimonials .horizontal-container .panel {
     width: 100vw;
@@ -1338,7 +1343,7 @@ p {
 }
 @media (max-width: 480px) {
   #testimonials .horizontal-container .panel .inner-box {
-    width: 100vw;
+    width: 90vw;
   }
 }
 @media (max-width: 360px) {
