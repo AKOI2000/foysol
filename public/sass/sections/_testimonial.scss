@@ -1,10 +1,7 @@
-#testimonials{
-    .container-lg{
-        display: none;
-     }
-
-     .horizontal-container{
-        display: none;
+#testimonials {
+    .container-lg,
+    .horizontal-container {
+      display: none;
     }
   }
 
@@ -130,14 +127,9 @@
         }
     }
 
-    #testimonials{
-        .container-lg{
-            display: block;
-         }
-    
-         .horizontal-container{
-            display: none;
-        }
+    #testimonials {
+        .container-lg { display: block; }
+        .horizontal-container { display: none; }
       }
 
    
@@ -149,8 +141,6 @@
         overflow: hidden;
         position: relative;
         // background: #fff;
-
-
         
             .section-heading{
                 margin-bottom: 3rem;
@@ -187,11 +177,6 @@
                     }
                 }
             }
-        
-           
-    
-
-
       
         .horizontal-wrapper {
           display: flex;
@@ -271,20 +256,9 @@
         }
       }
 
-      #testimonials{
-        .container-lg{
-            display: none;
-         }
-      }
-
-      #testimonials{
-        .container-lg{
-            display: none;
-         }
-    
-         .horizontal-container{
-            display: block;
-        }
+      #testimonials {
+        .container-lg { display: none; }
+        .horizontal-container { display: block; }
       }
     
 }
