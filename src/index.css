@@ -1299,36 +1299,51 @@ p {
   height: 100vh;
 }
 #testimonials .horizontal-container .panel {
-  width: 60vw;
+  width: 450px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  align-items: flex-end;
+  padding: 0 2rem 5rem;
   height: 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #testimonials .horizontal-container .panel {
-    width: 90vw;
+    padding: 0;
+    align-items: center;
+    padding: 0 2rem;
   }
 }
-@media (max-width: 608px) {
+@media (max-width: 360px) {
   #testimonials .horizontal-container .panel {
     width: 100vw;
   }
 }
 #testimonials .horizontal-container .panel .inner-box {
+  margin-top: 4rem;
   width: clamp(220px, 60vw, 700px);
-  min-height: 226px;
-  padding: 3rem;
+  height: 300px;
+  padding: 3rem 2rem;
   display: grid;
   grid-template-rows: 1fr max-content;
   border: 0.2px solid #b6b6b6;
   border-radius: 1rem;
   box-shadow: 0 1px 5px 0 #b6b6b6;
 }
+@media (max-width: 768px) {
+  #testimonials .horizontal-container .panel .inner-box {
+    height: 220px;
+    width: 90vw;
+  }
+}
+@media (max-width: 480px) {
+  #testimonials .horizontal-container .panel .inner-box {
+    width: 100vw;
+  }
+}
 @media (max-width: 360px) {
   #testimonials .horizontal-container .panel .inner-box {
-    min-height: 274px;
+    width: 100vw;
+    height: 250px;
   }
 }
 #testimonials .horizontal-container .panel .inner-box p {
@@ -1351,16 +1366,6 @@ p {
   font-size: 1.7rem;
   font-weight: 400;
   color: #b6b6b6;
-}
-@media (max-width: 480px) {
-  #testimonials .horizontal-container .panel .inner-box {
-    width: 100vw;
-  }
-}
-@media (max-width: 360px) {
-  #testimonials .horizontal-container .panel .inner-box {
-    width: 90vw;
-  }
 }
 #testimonials .horizontal-container .panel .inner-box img {
   width: 50px;
