@@ -216,11 +216,12 @@
 
         @include respond(sm) {
           width: 90vw;
+          height: 250px;
         }
 
         @include respond(xs) {
           width: 100vw;
-          height: 250px;
+          height: 280px;
         }
 
         p {

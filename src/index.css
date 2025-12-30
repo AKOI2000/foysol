@@ -1344,12 +1344,13 @@ p {
 @media (max-width: 480px) {
   #testimonials .horizontal-container .panel .inner-box {
     width: 90vw;
+    height: 250px;
   }
 }
 @media (max-width: 360px) {
   #testimonials .horizontal-container .panel .inner-box {
     width: 100vw;
-    height: 250px;
+    height: 280px;
   }
 }
 #testimonials .horizontal-container .panel .inner-box p {
