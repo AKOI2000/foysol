@@ -9,10 +9,66 @@ import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 function Testimonial() {
+  // const containerRef = useRef(null);
+  // const wrapperRef = useRef(null);
+
+  // useEffect(() => {
+  //   const mm = gsap.matchMedia();
+
+  //   mm.add(
+  //     {
+  //       horizontalLayout:
+  //         "(max-width: 950px), (hover: none) and (pointer: coarse)",
+  //     },
+  //     (context) => {
+  //       if (context.conditions.horizontalLayout && wrapperRef.current && containerRef.current) {
+  //         const totalWidth =
+  //           wrapperRef.current.scrollWidth - containerRef.current.offsetWidth;
+
+  //         gsap.to(wrapperRef.current, {
+  //           x: -totalWidth,
+  //           ease: "none",
+  //           scrollTrigger: {
+  //             trigger: containerRef.current,
+  //             pin: true,
+  //             scrub: true,
+  //             start: "top 10%",
+  //             end: () => `+=${totalWidth}`,
+  //             invalidateOnRefresh: true,
+  //             pinSpacing: true,
+  //           },
+  //         });
+  //       }
+  //     }
+  //   );
+
+  //   return () => {
+  //     mm.revert();
+  //   };
+  // }, []);
+
   const containerRef = useRef(null);
   const wrapperRef = useRef(null);
+  const location = useLocation();
+  const [mounted, setMounted] = useState(false);
+
+  // Detect route changes and force re-initialization
+  useEffect(() => {
+    setMounted(false);
+    const timer = setTimeout(() => setMounted(true), 50);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
 
   useEffect(() => {
+    if (!mounted) return;
+
+    // Kill any existing ScrollTriggers on this element
+    ScrollTrigger.getAll().forEach(st => {
+      if (st.trigger === containerRef.current) {
+        st.kill();
+      }
+    });
+
     const mm = gsap.matchMedia();
 
     mm.add(
@@ -21,22 +77,50 @@ function Testimonial() {
           "(max-width: 950px), (hover: none) and (pointer: coarse)",
       },
       (context) => {
-        if (context.conditions.horizontalLayout && wrapperRef.current && containerRef.current) {
-          const totalWidth =
-            wrapperRef.current.scrollWidth - containerRef.current.offsetWidth;
+        if (context.conditions.horizontalLayout) {
+          // Wait for layout to settle
+          requestAnimationFrame(() => {
+            if (wrapperRef.current && containerRef.current) {
+              // Wait for images to load
+              const images = containerRef.current.querySelectorAll('img');
+              const imagePromises = Array.from(images).map(img => {
+                if (img.complete) return Promise.resolve();
+                return new Promise(resolve => {
+                  img.onload = resolve;
+                  img.onerror = resolve;
+                  // Timeout fallback in case image fails
+                  setTimeout(resolve, 1000);
+                });
+              });
 
-          gsap.to(wrapperRef.current, {
-            x: -totalWidth,
-            ease: "none",
-            scrollTrigger: {
-              trigger: containerRef.current,
-              pin: true,
-              scrub: true,
-              start: "top 10%",
-              end: () => `+=${totalWidth}`,
-              invalidateOnRefresh: true,
-              pinSpacing: true,
-            },
+              Promise.all(imagePromises).then(() => {
+                // Double check refs still exist
+                if (!wrapperRef.current || !containerRef.current) return;
+
+                const totalWidth =
+                  wrapperRef.current.scrollWidth - containerRef.current.offsetWidth;
+
+                gsap.to(wrapperRef.current, {
+                  x: -totalWidth,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: containerRef.current,
+                    pin: true,
+                    scrub: 1,
+                    start: "top top",
+                    end: () => `+=${totalWidth}`,
+                    invalidateOnRefresh: true,
+                    pinSpacing: true,
+                    anticipatePin: 1,
+                  },
+                });
+
+                // Refresh after a short delay
+                setTimeout(() => {
+                  ScrollTrigger.refresh();
+                }, 100);
+              });
+            }
           });
         }
       }
@@ -44,8 +128,14 @@ function Testimonial() {
 
     return () => {
       mm.revert();
+      // Clean up ScrollTriggers
+      ScrollTrigger.getAll().forEach(st => {
+        if (st.trigger === containerRef.current) {
+          st.kill();
+        }
+      });
     };
-  }, []);
+  }, [mounted]);
 
   return (
     <div id="testimonials">
