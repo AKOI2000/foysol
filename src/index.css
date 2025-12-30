@@ -1143,6 +1143,9 @@ p {
   color: #756F6F;
 }
 
+#testimonials .container-lg {
+  display: block;
+}
 #testimonials .container-lg .testimonial-figure {
   position: relative;
   overflow: hidden;
@@ -1365,6 +1368,14 @@ p {
   border-radius: 50%;
 }
 
+@media (max-width: 950px), (hover: none) and (pointer: coarse) {
+  #testimonials .container-lg {
+    display: none;
+  }
+  #testimonials .horizontal-container {
+    display: block;
+  }
+}
 .pin-spacer,
 .pin-spacer > * {
   z-index: 4 !important;

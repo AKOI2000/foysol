@@ -1,5 +1,6 @@
 #testimonials {
   .container-lg {
+    display: block;
     .testimonial-figure {
         // max-height: 220px;
         // max-width: 100%;
@@ -242,29 +243,19 @@
   }
 }
 
-// @media (min-width: 951px) and (hover: hover) and (pointer: fine) {
-  
 
-//   //   #testimonials {
-//   //     .container-lg {
-//   //       display: block;
-//   //     }
-//   //     .horizontal-container {
-//   //       display: none;
-//   //     }
-//   //   }
-// }
 
-// @media (max-width: 950px), (hover: none) and (pointer: coarse) {
-//   //   #testimonials {
-//   //     .container-lg {
-//   //       display: none;
-//   //     }
-//   //     .horizontal-container {
-//   //       display: block;
-//   //     }
-//   //   }
-// }
+@media (max-width: 950px), (hover: none) and (pointer: coarse) {
+    #testimonials {
+      .container-lg {
+        display: none;
+      }
+
+      .horizontal-container {
+        display: block;
+      }
+    }
+}
 
   .pin-spacer,
   .pin-spacer > *{

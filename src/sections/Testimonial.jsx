@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 function Testimonial() {
   const containerRef = useRef(null);
   const wrapperRef = useRef(null);
-  const [isHorizontal, setIsHorizontal] = useState(false);
 
   useEffect(() => {
     const mm = gsap.matchMedia();
@@ -22,10 +21,7 @@ function Testimonial() {
           "(max-width: 950px), (hover: none) and (pointer: coarse)",
       },
       (context) => {
-        setIsHorizontal(context.conditions.horizontalLayout);
-
-        if (context.conditions.horizontalLayout && wrapperRef.current) {
-          // wait for images to load for accurate width
+        if (context.conditions.horizontalLayout && wrapperRef.current && containerRef.current) {
           const totalWidth =
             wrapperRef.current.scrollWidth - containerRef.current.offsetWidth;
 
@@ -39,7 +35,7 @@ function Testimonial() {
               start: "top 10%",
               end: () => `+=${totalWidth}`,
               invalidateOnRefresh: true,
-              pinSpacing: true
+              pinSpacing: true,
             },
           });
         }
@@ -48,13 +44,12 @@ function Testimonial() {
 
     return () => {
       mm.revert();
-      ScrollTrigger.refresh(); // Refresh after cleanup
     };
   }, []);
 
   return (
     <div id="testimonials">
-      {isHorizontal ? (
+     
         <div className="horizontal-container" ref={containerRef}>
           <div className="section-heading">
             <h5 className="heading-label">Testimonials</h5>
@@ -88,7 +83,7 @@ function Testimonial() {
             ))}
           </div>
         </div>
-      ) : (
+      
         <div className="container-lg">
           <div className="grid col-7-by-5">
             <figure className="testimonial-figure testimonial-figure-1">
@@ -194,7 +189,7 @@ function Testimonial() {
             </div>
           </div>
         </div>
-      )}
+
     </div>
   );
 }
