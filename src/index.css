@@ -1252,6 +1252,7 @@ p {
   margin-bottom: 2rem;
 }
 #testimonials .horizontal-container {
+  display: none;
   height: 100vh;
   overflow: hidden;
   position: relative;
