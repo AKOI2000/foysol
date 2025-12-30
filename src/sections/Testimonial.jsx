@@ -39,14 +39,18 @@ function Testimonial() {
               start: "top 10%",
               end: () => `+=${totalWidth}`,
               invalidateOnRefresh: true,
+              pinSpacing: true
             },
           });
         }
       }
     );
 
-    return () => mm.revert();
-  }, [isHorizontal]);
+    return () => {
+      mm.revert();
+      ScrollTrigger.refresh(); // Refresh after cleanup
+    };
+  }, []);
 
   return (
     <div id="testimonials">

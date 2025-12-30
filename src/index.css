@@ -1365,4 +1365,9 @@ p {
   border-radius: 50%;
 }
 
+.pin-spacer,
+.pin-spacer > * {
+  z-index: 4 !important;
+}
+
 /*# sourceMappingURL=index.css.map */
