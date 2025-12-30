@@ -52,7 +52,7 @@ function Testimonial() {
     <div id="testimonials">
       {isHorizontal ? (
         <div className="horizontal-container" ref={containerRef}>
-          <div className="section-heading">
+          {/* <div className="section-heading">
             <h5 className="heading-label">Testimonials</h5>
             <h2 className="heading-2">
               Trusted by Leaders <span>from various industries</span>
@@ -61,7 +61,7 @@ function Testimonial() {
               Discover how our advisory solutions have helped businesses gain
               clarity, reduce risk, and make confident decisions.
             </p>
-          </div>
+          </div> */}
 
           <div ref={wrapperRef} className="horizontal-wrapper">
             {testimonials.map((testimonial, index) => (
