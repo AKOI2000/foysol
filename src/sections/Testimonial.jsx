@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
