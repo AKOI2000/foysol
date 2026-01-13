@@ -22,7 +22,7 @@ function ConsultationPopup() {
     try {
       setSuccess(false);
       setLoading(true);
-      const res = await fetch("http://localhost:3001/api/consultation", {
+      const res = await fetch("/api/consultation", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
