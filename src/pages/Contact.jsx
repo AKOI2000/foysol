@@ -1,14 +1,42 @@
+import { useState } from "react";
 import ConsultationPopup from "../components/ConsultationPopup";
 import Footer from "../sections/Footer";
 import Navbar from "../sections/Navbar";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const data = { name, phone: number, email, subject, message };
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      const res = await fetch("http://localhost:3001/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error("Failed");
+    } catch (error) {
+      console.error(error, error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div id="contact">
       <Navbar />
-      <ConsultationPopup/>
+      <ConsultationPopup />
       <div className="sub-hero">
-        <img src="/about-subhero.png" alt="" loading="lazy"/>
+        <img src="/about-subhero.png" alt="" loading="lazy" />
         <h1 className="sub-hero_text heading-2">
           Home<span>/Contact</span>
         </h1>
@@ -79,7 +107,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <form action="" className="contact-form">
+          <form action="" className="contact-form" onSubmit={submitForm}>
             <h3 className="heading-3">Have any Queries? We’re here to help.</h3>
             <input
               type="text"
@@ -88,14 +116,25 @@ function Contact() {
               placeholder="Name"
               required
               autoComplete="false"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="tel"
+              name=""
+              id=""
+              placeholder="Telephone Number"
+              required
+              autoComplete="false"
+              onChange={(e) => setNumber(e.target.value)}
             />
             <input
               type="text"
               name=""
               id=""
-              placeholder="subject"
+              placeholder="Subject"
               required
               autoComplete="false"
+              onChange={(e) => setSubject(e.target.value)}
             />
             <input
               type="email"
@@ -104,6 +143,7 @@ function Contact() {
               placeholder="email"
               required
               autoComplete="false"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
               name=""
@@ -111,8 +151,9 @@ function Contact() {
               placeholder="message"
               required
               autoComplete="false"
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button className="btn btn-main">Send message</button>
+            <button className={`btn btn-main ${loading && "disabled"}`} disabled={loading}>{loading ? "Sending ...." : "Send message"}</button>
           </form>
         </div>
       </div>

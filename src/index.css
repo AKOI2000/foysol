@@ -238,6 +238,10 @@ p {
 .btn-main:hover {
   filter: brightness(0.8);
 }
+.btn-main.disabled {
+  filter: grayscale(100);
+  cursor: not-allowed;
+}
 @media (max-width: 608px) {
   .btn-main {
     font-size: 1.6rem;
@@ -314,12 +318,22 @@ p {
   background: white;
   position: relative;
   transition: all 0.7s ease;
+  border-radius: 1rem;
 }
 @media (max-width: 608px) {
   .modal-bg .modal {
     width: 80%;
     padding: 6rem 2rem;
   }
+}
+.modal-bg .modal .success {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
 }
 .modal-bg .modal input, .modal-bg .modal textarea, .modal-bg .modal .btn {
   width: 100%;
@@ -339,8 +353,7 @@ p {
 }
 .modal-bg .modal input:placeholder-shown, .modal-bg .modal textarea:placeholder-shown {
   font-family: "SFProDisplay";
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 .modal-bg .modal textarea {
   height: 15.8rem;
@@ -369,6 +382,18 @@ p {
   opacity: 0;
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+#faqs .faq-questions .faq-question-body p {
+  margin-bottom: 5px;
+}
+#faqs .faq-questions .faq-question-body ol {
+  display: inline-block;
+  list-style: none;
+  line-height: 1.5;
+  padding-left: 1rem;
+}
+#faqs .faq-questions .faq-question-body ol p {
+  margin-bottom: 0;
+}
 #faqs .faq-questions .faq-question.active #faqs .faq-questions .faq-question-body {
   max-height: 500px;
   opacity: 1;
@@ -388,6 +413,18 @@ p {
 }
 #faqs .faq-answers .faq-answer {
   animation: faqFadeSlide 0.8s ease forwards;
+}
+#faqs .faq-answers .faq-answer p {
+  margin-bottom: 5px;
+}
+#faqs .faq-answers .faq-answer ol {
+  display: inline-block;
+  list-style: none;
+  line-height: 1.5;
+  padding-left: 1rem;
+}
+#faqs .faq-answers .faq-answer ol p {
+  margin-bottom: 0;
 }
 
 @keyframes faqFadeSlide {
