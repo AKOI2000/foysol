@@ -1,24 +1,23 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Contact from "./pages/Contact"
-import Navbar from "./sections/Navbar"
-import { useState } from "react"
+import { Route, Routes } from "react-router-dom";
+import { lazy } from "react";
+import { Suspense } from "react";
 
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   return (
     <>
-     <Routes>
-      <Route path="/" element={ <Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-     </Routes>
-
-      {/* <Home /> */}
-     {/* <About /> */}
+      <Suspense fallback={<p>Loading...</p>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
