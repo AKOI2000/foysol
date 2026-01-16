@@ -48,7 +48,11 @@ function Contact() {
         <Navbar />
         <ConsultationPopup />
         <div className="sub-hero">
-          <img src="/about-subhero.png" alt="" loading="lazy" />
+          <img
+            src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597158/about-subhero_v9pmh3.webp"
+            alt=""
+            loading="lazy"
+          />
           <h1 className="sub-hero_text heading-2">
             Home<span>/Contact</span>
           </h1>

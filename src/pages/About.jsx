@@ -24,7 +24,7 @@ function About() {
         <Navbar />
         <ConsultationPopup />
         <div className="sub-hero">
-          <img src="/about-subhero.png" alt="" loading="lazy" />
+          <img src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597158/about-subhero_v9pmh3.webp" alt="" loading="lazy" />
           <h1 className="sub-hero_text heading-2">
             Home<span>/About Us</span>
           </h1>
@@ -67,14 +67,17 @@ function About() {
                 </div>
               </div>
               <div className="grid col-2-by-1">
-                <img src="/story-1.png" alt="" />
-                <img src="/story-2.png" alt="" />
+                <img src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597211/story-1_rtu6tm.webp" alt="" />
+                <img
+                  src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597217/story-2_or5ifw.webp"
+                  alt=""
+                />
               </div>
             </div>
 
             <div className="grid col-2-by-1">
               <div className="img-box">
-                <img src="/about-stats.png" alt="" />
+                <img src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/about-stats_gwfm92.webp" alt="" />
               </div>
 
               <div className="text-box">

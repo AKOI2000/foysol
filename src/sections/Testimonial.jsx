@@ -178,7 +178,11 @@ function Testimonial() {
       <div className="container-lg">
         <div className="grid col-7-by-5">
           <figure className="testimonial-figure testimonial-figure-1">
-            <img src="/leader Image (5).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597204/leader_Image_5_nx2mnl.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “What stood out most was FOYSOL’s attention to detail and
               commitment to our business objectives. They did not offer generic
@@ -186,7 +190,11 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-2">
-            <img src="/leader Image (9).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_9_gjbwyz.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “FOYSOL Consulting added real value to our risk management
               strategy. Their guidance improved our decision-making and
@@ -194,14 +202,22 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-3">
-            <img src="/leader Image (6).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597205/leader_Image_6_gx7oqx.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “The team at FOYSOL is knowledgeable, responsive, and highly
               professional. Their advisory support exceeded our expectations.”
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-4">
-            <img src="/leader Image (10).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597214/leader_Image_10_eqace4.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “FOYSOL’s expertise helped us optimize our insurance coverage
               while ensuring compliance with regulatory standards. Their
@@ -209,7 +225,11 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-5">
-            <img src="/leader Image.png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_vn3xxo.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “From initial consultation to final delivery, FOYSOL Consulting
               maintained a high level of professionalism and clarity. We felt
@@ -217,7 +237,11 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-6">
-            <img src="/leader Image (1).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/leader_Image_1_dqjno1.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “FOYSOL provided insightful risk advisory services that helped us
               anticipate challenges rather than react to them. Their
@@ -225,14 +249,22 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-7">
-            <img src="/leader Image (2).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/leader_Image_2_vh8hlz.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “FOYSOL Consulting delivered clear, well-structured advice that
               empowered our team to make informed decisions with confidence.”
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-8">
-            <img src="/leader Image (8).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597206/leader_Image_8_l05rvf.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               ”FOYSOL Consulting demonstrated exceptional professionalism and
               deep industry knowledge. Their advisory approach helped us
@@ -241,7 +273,11 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-9">
-            <img src="/leader Image (7).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597206/leader_Image_7_ooxgby.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “Working with FOYSOL was a seamless experience. Their team broke
               down complex insurance concepts into clear, actionable insights
@@ -249,7 +285,11 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-10">
-            <img src="/leader Image (4).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597186/leader_Image_4_qkypst.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “Their ability to align insurance solutions with our business
               goals was impressive. FOYSOL truly understands how risk impacts
@@ -257,7 +297,11 @@ function Testimonial() {
             </p>
           </figure>
           <figure className="testimonial-figure testimonial-figure-11">
-            <img src="/leader Image (3).png" alt="" loading="lazy" />
+            <img
+              src="https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/leader_Image_3_xp1pqx.webp"
+              alt=""
+              loading="lazy"
+            />
             <p>
               “The training session facilitated by FOYSOL was practical,
               engaging, and highly relevant to our operations. Our team gained
@@ -288,37 +332,43 @@ export default Testimonial;
 
 const testimonials = [
   {
-    imgUrl: "/leader Image (5).png",
+    imgUrl:
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597204/leader_Image_5_nx2mnl.webp",
     text: "What stood out most was FOYSOL’s attention to detail and commitment to our business objectives. They did not offer generic advice—they delivered tailored solutions.",
     name: "Alexandria Sandra",
     role: "lorem ispum",
   },
   {
-    imgUrl: "/leader Image (9).png",
+    imgUrl:
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_9_gjbwyz.webp",
     text: "FOYSOL Consulting added real value to our risk management strategy. Their guidance improved our decision-making and strengthened our overall risk posture.",
     name: "Alexandria Sandra",
     role: "lorem ispum",
   },
   {
-    imgUrl: "/leader Image (6).png",
+    imgUrl:
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597205/leader_Image_6_gx7oqx.webp",
     text: "The team at FOYSOL is knowledgeable, responsive, and highly professional. Their advisory support exceeded our expectations.",
     name: "Alexandria Sandra",
     role: "lorem ispum",
   },
   {
-    imgUrl: "/leader Image (10).png",
+    imgUrl:
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597214/leader_Image_10_eqace4.webp",
     text: "FOYSOL’s expertise helped us optimize our insurance coverage while ensuring compliance with regulatory standards. Their recommendations were both strategic and practical.",
     name: "Alexandria Sandra",
     role: "lorem ispum",
   },
   {
-    imgUrl: "/leader Image.png",
+    imgUrl:
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_vn3xxo.webp",
     text: "From initial consultation to final delivery, FOYSOL Consulting maintained a high level of professionalism and clarity. We felt confident throughout the engagement.",
     name: "Alexandria Sandra",
     role: "lorem ispum",
   },
   {
-    imgUrl: "/leader Image (1).png",
+    imgUrl:
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/leader_Image_1_dqjno1.webp",
     text: "FOYSOL provided insightful risk advisory services that helped us anticipate challenges rather than react to them. Their forward-thinking approach sets them apart.",
     name: "Alexandria Sandra",
     role: "lorem ispum",

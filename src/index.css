@@ -152,10 +152,34 @@ button {
   border: none;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: "SFProDisplay";
 }
 
+.loader-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader-box .loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  clip-path: inset(0 100% 0 0);
+  animation: l5 2s steps(11) infinite;
+}
+.loader-box .loader:before {
+  content: "Loading...";
+}
+
+@keyframes l5 {
+  to {
+    clip-path: inset(0 -1ch 0 0);
+  }
+}
 .heading-1 {
   font-size: 4.8rem;
 }
@@ -835,7 +859,7 @@ p {
 }
 
 #cta-section {
-  background: linear-gradient(to bottom, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url(../../puzzle.png);
+  background: linear-gradient(to bottom, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url("https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597229/puzzle_cehb1j.webp");
   background-size: cover;
   background-position: top center;
 }

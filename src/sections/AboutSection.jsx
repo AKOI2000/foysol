@@ -12,7 +12,7 @@ function AboutSection() {
 
         <div className="grid col-2-by-1">
           <div className="img-box">
-            <img src="/Ceo Video.png" alt="" loading="lazy"/>
+            <img src="/Ceo Video.webp" alt="" loading="lazy"/>
           </div>
 
          <AboutGrid />
