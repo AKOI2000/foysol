@@ -77,7 +77,7 @@ function Contact() {
                       fill="#121212"
                     />
                   </svg>
-                  <p>info@foysolconsulting.com</p>
+                  <p>consult@foysolconsulting.com</p>
                 </div>
                 <div className="detail">
                   <svg
