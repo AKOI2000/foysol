@@ -2,7 +2,6 @@ import { useLocation } from "react-router-dom";
 
 function Footer() {
   const { pathname } = useLocation();
-  console.log(pathname);
 
   function scrollTo(id) {
     const el = document.getElementById(id);
