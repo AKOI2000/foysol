@@ -4,7 +4,7 @@
     gap: 1rem;
 
     .faq-question {
-      border: 0.2px solid rgb(0, 0, 0, .25);
+      border: 0.2px solid rgb(0, 0, 0, 0.25);
       border-radius: 1rem;
 
       &-heading {
@@ -23,33 +23,32 @@
         opacity: 0;
         transition: max-height 0.3s ease, opacity 0.3s ease;
 
-        p{
+        p {
           margin-bottom: 5px;
+          line-height: 1.5;
         }
-    
 
-        ol{
+        ol {
           display: inline-block;
           list-style: none;
           line-height: 1.5;
           padding-left: 1rem;
 
-          p{
+          p {
             margin-bottom: 0;
           }
         }
-       
       }
 
       &.active &-body {
-        max-height: 500px; // adjust to content
+        max-height: 550px; // adjust to content
         opacity: 1;
       }
     }
   }
 
   .faq-answers {
-    border: 0.2px solid rgb(0, 0, 0, .25);
+    border: 0.2px solid rgb(0, 0, 0, 0.25);
     border-radius: 1rem;
     padding: 2rem 1rem;
 
@@ -61,23 +60,23 @@
     .faq-answer-wrapper {
       position: relative;
       overflow: hidden;
+      // animation: faqFadeSlide 0.8s ease forwards;
     }
 
     .faq-answer {
-      animation: faqFadeSlide 0.8s ease forwards;
-
-      p{
+      // animation: faqFadeSlide 0.8s ease forwards;
+      p {
         margin-bottom: 5px;
+        line-height: 1.5;
       }
-  
 
-      ol{
+      ol {
         display: inline-block;
         list-style: none;
         line-height: 1.5;
         padding-left: 1rem;
 
-        p{
+        p {
           margin-bottom: 0;
         }
       }
@@ -85,80 +84,76 @@
   }
 }
 
-@keyframes faqFadeSlide {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+// @keyframes faqFadeSlide {
+//   from {
+//     opacity: 0;
+//     transform: translateY(12px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+@media (hover: hover) and (pointer: fine) {
+  #faqs {
+    .faq-questions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .faq-question {
+        transition: all 0.2s ease;
+        &:hover {
+          background-color: #eaeffc;
+        }
+        &-body {
+          display: none; // hide inline body on desktop
+        }
+      }
+    }
+
+    .faq-answers {
+      display: block; // right panel always visible
+    }
   }
 }
 
-
-@media (hover: hover) and (pointer: fine) {
-    #faqs {  
-      .faq-questions {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-  
-        .faq-question {
-          transition: all .2s ease;
-          &:hover{
-            background-color: #EAEFFC;
-          }
-          &-body {
-            display: none; // hide inline body on desktop
-          }
-        }
-      }
-  
-      .faq-answers {
-        display: block; // right panel always visible
-      }
-    }
-  }
-
-
-  @media (hover: none) and (pointer: coarse) {
-    #faqs {
-    
-        .faq-questions{
-            .faq-question{
-                &.active .faq-question-heading .faq-arrow {
-                    transform: rotate(90deg); // points right -> down
-                }
-
-                &.active .faq-question-body {
-                    max-height: 500px; // adjust for your content
-                    opacity: 1;
-                    padding: 2rem 1.5rem;
-                  }
-
-                .faq-question-heading{
-                    .faq-arrow {
-                        transition: transform 0.3s ease;
-                      }
-                }
-
-                .faq-question-body {
-                    max-height: 0;
-                    overflow: hidden;
-                    opacity: 0;
-                    padding: 0 1.5rem;
-                    transition: all .3s ease;
-                }
-            }
+@media (hover: none) and (pointer: coarse) {
+  #faqs {
+    .faq-questions {
+      .faq-question {
+        &.active .faq-question-heading .faq-arrow {
+          transform: rotate(90deg); // points right -> down
         }
 
-      .col-2-by-1{
-        grid-template-columns: 1fr;
-      }
-      .faq-answers {
-        display: none; // hide desktop panel
+        &.active .faq-question-body {
+          max-height: 600px; // adjust for your content
+          opacity: 1;
+          padding: 2rem 1.5rem;
+        }
+
+        .faq-question-heading {
+          .faq-arrow {
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .faq-question-body {
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          padding: 0 1.5rem;
+          transition: all 0.3s ease;
+        }
       }
     }
+
+    .col-2-by-1 {
+      grid-template-columns: 1fr;
+    }
+    .faq-answers {
+      display: none; // hide desktop panel
+    }
   }
-  
+}

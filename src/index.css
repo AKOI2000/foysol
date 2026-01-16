@@ -384,6 +384,7 @@ p {
 }
 #faqs .faq-questions .faq-question-body p {
   margin-bottom: 5px;
+  line-height: 1.5;
 }
 #faqs .faq-questions .faq-question-body ol {
   display: inline-block;
@@ -395,7 +396,7 @@ p {
   margin-bottom: 0;
 }
 #faqs .faq-questions .faq-question.active #faqs .faq-questions .faq-question-body {
-  max-height: 500px;
+  max-height: 550px;
   opacity: 1;
 }
 #faqs .faq-answers {
@@ -411,11 +412,9 @@ p {
   position: relative;
   overflow: hidden;
 }
-#faqs .faq-answers .faq-answer {
-  animation: faqFadeSlide 0.8s ease forwards;
-}
 #faqs .faq-answers .faq-answer p {
   margin-bottom: 5px;
+  line-height: 1.5;
 }
 #faqs .faq-answers .faq-answer ol {
   display: inline-block;
@@ -427,16 +426,6 @@ p {
   margin-bottom: 0;
 }
 
-@keyframes faqFadeSlide {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @media (hover: hover) and (pointer: fine) {
   #faqs .faq-questions {
     display: flex;
@@ -447,7 +436,7 @@ p {
     transition: all 0.2s ease;
   }
   #faqs .faq-questions .faq-question:hover {
-    background-color: #EAEFFC;
+    background-color: #eaeffc;
   }
   #faqs .faq-questions .faq-question-body {
     display: none;
@@ -461,7 +450,7 @@ p {
     transform: rotate(90deg);
   }
   #faqs .faq-questions .faq-question.active .faq-question-body {
-    max-height: 500px;
+    max-height: 600px;
     opacity: 1;
     padding: 2rem 1.5rem;
   }
@@ -984,6 +973,9 @@ p {
   font-weight: 300;
   color: #000;
   font-size: 1.6rem;
+  background: transparent;
+  font-family: "SFProDisplay";
+  cursor: pointer;
 }
 #footer .footer-box .footer_links-link:not(:last-child) {
   margin-bottom: 0.5rem;

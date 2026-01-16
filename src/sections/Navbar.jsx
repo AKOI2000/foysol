@@ -3,13 +3,16 @@ import { NavLink, Link } from "react-router-dom";
 import { useConsultation } from "../context/consultationContext";
 
 function Navbar() {
-  const {setOnclick} = useConsultation()
+  const { setOnclick } = useConsultation();
   const [isActive, setIsActive] = useState(false);
-  
+
   return (
     <div className="navbar nav-container">
       <Link to="/" className="navbar_logo-box">
-        <img src="/Logo.png" alt="" />
+        <img
+          src="/Logo.png"
+          alt="Foysol Consulting || Independent insurance advisory and consulting firm || We are not an insurance company, we are an INSURANCE ADVISORY AND CONSULTING firm"
+        />
       </Link>
 
       <nav className={`navbar_nav ${isActive ? "active" : ""}`}>
@@ -25,7 +28,10 @@ function Navbar() {
       </nav>
 
       <div className="navbar_cta">
-        <a className="btn btn-main" onClick={()=> setOnclick(onClick => !onClick)}>
+        <a
+          className="btn btn-main"
+          onClick={() => setOnclick((onClick) => !onClick)}
+        >
           Book a consultation
         </a>
         <div

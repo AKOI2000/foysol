@@ -115,6 +115,9 @@
                 font-weight: 300;
                 color: #000;
                 font-size: 1.6rem;
+                background: transparent;
+                font-family: $font-text;
+                cursor: pointer;
                 
 
                 &:not(:last-child) {
