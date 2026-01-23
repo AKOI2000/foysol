@@ -2,19 +2,19 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://foysolconsulting.com/</loc>
+    <loc>https://www.foysolconsulting.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://foysolconsulting.com/about</loc>
+    <loc>https://www.foysolconsulting.com/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://foysolconsulting.com/contact</loc>
+    <loc>https://www.foysolconsulting.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
