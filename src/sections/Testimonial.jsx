@@ -295,44 +295,44 @@ export default Testimonial;
 const testimonials = [
   {
     imgUrl:
-      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597204/leader_Image_5_nx2mnl.webp",
+      "	https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597206/leader_Image_7_ooxgby.webp",
     text: "What stood out most was FOYSOL’s attention to detail and commitment to our business objectives. They did not offer generic advice—they delivered tailored solutions.",
-    name: "Alexandria Sandra",
+    name: "Nneoma Okafor",
     role: "Financial Analyst",
   },
   {
     imgUrl:
-      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_9_gjbwyz.webp",
+      "	https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/leader_Image_3_xp1pqx.webp",
     text: "FOYSOL Consulting added real value to our risk management strategy. Their guidance improved our decision-making and strengthened our overall risk posture.",
-    name: "Andrew Logan",
+    name: "Chukwudi Eze",
     role: "Senior Accountant",
   },
   {
     imgUrl:
-      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597205/leader_Image_6_gx7oqx.webp",
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597204/leader_Image_5_nx2mnl.webp",
     text: "The team at FOYSOL is knowledgeable, responsive, and highly professional. Their advisory support exceeded our expectations.",
-    name: "Emily Clarke",
+    name: "Omolara Olabode",
     role: "Financial Manager",
   },
   {
     imgUrl:
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597214/leader_Image_10_eqace4.webp",
     text: "FOYSOL’s expertise helped us optimize our insurance coverage while ensuring compliance with regulatory standards. Their recommendations were both strategic and practical.",
-    name: "Laura Benneth",
+    name: "Adaeze Ugwu",
     role: "Risk & Compliance Officer",
   },
   {
     imgUrl:
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_vn3xxo.webp",
     text: "From initial consultation to final delivery, FOYSOL Consulting maintained a high level of professionalism and clarity. We felt confident throughout the engagement.",
-    name: "Charles Cole",
+    name: "Tunde Adebayo",
     role: "Investment Analyst",
   },
   {
     imgUrl:
-      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/leader_Image_1_dqjno1.webp",
+      "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597206/leader_Image_8_l05rvf.webp",
     text: "FOYSOL provided insightful risk advisory services that helped us anticipate challenges rather than react to them. Their forward-thinking approach sets them apart.",
-    name: "Daniel Harris",
+    name: "Nnamdi Okoro",
     role: "Strategy & Risk Consultant",
   },
 ];
