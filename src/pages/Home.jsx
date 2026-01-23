@@ -22,12 +22,14 @@ function Home() {
       <SchemaLocalBusiness />
 
       <Navbar />
-      <ConsultationPopup />
-      <Hero />
-      <AboutSection />
-      <Services />
-      <Testimonial />
-      <Cta />
+      <main>
+        <ConsultationPopup />
+        <Hero />
+        <AboutSection />
+        <Services />
+        <Testimonial />
+        <Cta />
+      </main>
       <Footer />
     </>
   );
