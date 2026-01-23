@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import Newsletter from "../components/Newsletter";
 
 function Footer() {
   const { pathname } = useLocation();
@@ -26,10 +27,7 @@ function Footer() {
         </div>
 
         <div className="newsletter_form-box">
-          <form className="newsletter-form">
-            <input type="email" name="" id="" placeholder="example@gmail.com" />
-            <button className="btn btn-main">Subscribe</button>
-          </form>
+          <Newsletter />
           <p>
             Join 2,000+ professionals receiving monthly insights on insurance,
             risk, business continuity, and claims strategy.
@@ -39,7 +37,10 @@ function Footer() {
 
       <div className="footer-box">
         <div className="footer-logo">
-          <img src="/Logo.png" alt="Foysol Consulting || Independent insurance advisory and consulting firm || We are not an insurance company, we are an INSURANCE ADVISORY AND CONSULTING firm" />
+          <img
+            src="/Logo.png"
+            alt="Foysol Consulting || Independent insurance advisory and consulting firm || We are not an insurance company, we are an INSURANCE ADVISORY AND CONSULTING firm"
+          />
         </div>
 
         <div className="footer-links">

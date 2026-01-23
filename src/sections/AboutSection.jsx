@@ -1,6 +1,5 @@
 import AboutGrid from "../components/AboutGrid";
-
-
+import Videoplayer from "../components/Videoplayer";
 function AboutSection() {
   return (
     <div id="about-section">
@@ -11,11 +10,8 @@ function AboutSection() {
         </div>
 
         <div className="grid col-2-by-1">
-          <div className="img-box">
-            <img src="/Ceo Video.webp" alt="" loading="lazy"/>
-          </div>
-
-         <AboutGrid />
+          <Videoplayer />
+          <AboutGrid />
         </div>
       </div>
     </div>

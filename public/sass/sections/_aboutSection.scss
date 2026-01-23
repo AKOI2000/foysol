@@ -3,6 +3,37 @@
     max-height: 520px;
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
+
+    &.playing .overlay{
+      pointer-events: none;
+    }
+
+    video{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: auto;
+    }
+
+
+    .overlay{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      background: #00000053;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      pointer-events: auto;
+
+
+      img{
+        width: auto;
+        height: auto;
+      }
+    }
   }
 
   .col-2-by-1 {
@@ -30,6 +61,7 @@
   column-gap: 2rem;
   row-gap: 2rem;
 }
+
 .about-section_cards {
   .about-section_card {
     border: 1px solid #ddd;
