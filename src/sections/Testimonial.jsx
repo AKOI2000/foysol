@@ -10,44 +10,6 @@ import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 function Testimonial() {
-  // const containerRef = useRef(null);
-  // const wrapperRef = useRef(null);
-
-  // useEffect(() => {
-  //   const mm = gsap.matchMedia();
-
-  //   mm.add(
-  //     {
-  //       horizontalLayout:
-  //         "(max-width: 950px), (hover: none) and (pointer: coarse)",
-  //     },
-  //     (context) => {
-  //       if (context.conditions.horizontalLayout && wrapperRef.current && containerRef.current) {
-  //         const totalWidth =
-  //           wrapperRef.current.scrollWidth - containerRef.current.offsetWidth;
-
-  //         gsap.to(wrapperRef.current, {
-  //           x: -totalWidth,
-  //           ease: "none",
-  //           scrollTrigger: {
-  //             trigger: containerRef.current,
-  //             pin: true,
-  //             scrub: true,
-  //             start: "top 10%",
-  //             end: () => `+=${totalWidth}`,
-  //             invalidateOnRefresh: true,
-  //             pinSpacing: true,
-  //           },
-  //         });
-  //       }
-  //     }
-  //   );
-
-  //   return () => {
-  //     mm.revert();
-  //   };
-  // }, []);
-
   const containerRef = useRef(null);
   const wrapperRef = useRef(null);
   const location = useLocation();
@@ -336,41 +298,41 @@ const testimonials = [
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597204/leader_Image_5_nx2mnl.webp",
     text: "What stood out most was FOYSOL’s attention to detail and commitment to our business objectives. They did not offer generic advice—they delivered tailored solutions.",
     name: "Alexandria Sandra",
-    role: "lorem ispum",
+    role: "Financial Analyst",
   },
   {
     imgUrl:
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_9_gjbwyz.webp",
     text: "FOYSOL Consulting added real value to our risk management strategy. Their guidance improved our decision-making and strengthened our overall risk posture.",
-    name: "Alexandria Sandra",
-    role: "lorem ispum",
+    name: "Andrew Logan",
+    role: "Senior Accountant",
   },
   {
     imgUrl:
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597205/leader_Image_6_gx7oqx.webp",
     text: "The team at FOYSOL is knowledgeable, responsive, and highly professional. Their advisory support exceeded our expectations.",
-    name: "Alexandria Sandra",
-    role: "lorem ispum",
+    name: "Emily Clarke",
+    role: "Financial Manager",
   },
   {
     imgUrl:
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597214/leader_Image_10_eqace4.webp",
     text: "FOYSOL’s expertise helped us optimize our insurance coverage while ensuring compliance with regulatory standards. Their recommendations were both strategic and practical.",
-    name: "Alexandria Sandra",
-    role: "lorem ispum",
+    name: "Laura Benneth",
+    role: "Risk & Compliance Officer",
   },
   {
     imgUrl:
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597207/leader_Image_vn3xxo.webp",
     text: "From initial consultation to final delivery, FOYSOL Consulting maintained a high level of professionalism and clarity. We felt confident throughout the engagement.",
-    name: "Alexandria Sandra",
-    role: "lorem ispum",
+    name: "Charles Cole",
+    role: "Investment Analyst",
   },
   {
     imgUrl:
       "https://res.cloudinary.com/dbn6k7pg6/image/upload/w_auto,f_auto,q_auto/v1768597159/leader_Image_1_dqjno1.webp",
     text: "FOYSOL provided insightful risk advisory services that helped us anticipate challenges rather than react to them. Their forward-thinking approach sets them apart.",
-    name: "Alexandria Sandra",
-    role: "lorem ispum",
+    name: "Daniel Harris",
+    role: "Strategy & Risk Consultant",
   },
 ];

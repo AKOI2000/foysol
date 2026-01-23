@@ -1,49 +1,35 @@
+import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
 
 function Videoplayer() {
-    const [playing, setPlaying] = useState(false);
-    const videoRef = useRef(null);
-  
-    async function handlePlay() {
-      const video = videoRef.current;
-      console.log(video.paused);
-  
-      try {
-        video.paused ? await video.play() : video.pause();
-      } catch (error) {
-        console.error("playback failed", error);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting && !video.paused) {
+          video.pause();
+        }
+      },
+      {
+        threshold: 0.3,
       }
-    }
-  
-    function toggleFullScreen() {
-      const video = videoRef.current;
-      console.log("DBBBB");
-      if (!document.fullscreenElement) {
-        video.requestFullscreen();
-      } else {
-        document.exitFullscreen();
-      }
-    }
+    );
+
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className={`img-box ${playing ? "playing" : ""}`}>
-      <video
-        preload="metadata"
-        poster="./Foysol ss.jpg"
-        id="video"
-        onPlay={() => setPlaying(true)} 
-        onPause={() => setPlaying(false)}
-        ref={videoRef}
-        onDoubleClick={toggleFullScreen}
-      >
+    <div className="img-box">
+      <video preload="none" controls poster="./Foysol ss.jpg" id="video" ref={videoRef}>
         <source src="./Foysol.mp4" type="video/mp4" />r
       </video>
-
-      {!playing && (
-        <div className="overlay" onClick={handlePlay}>
-          <img src="./Vector (1).png" alt="" />
-        </div>
-      )}
     </div>
   );
 }
