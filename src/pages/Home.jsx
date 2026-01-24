@@ -2,6 +2,7 @@ import ConsultationPopup from "../components/ConsultationPopup";
 import SchemaHomeVideo from "../components/SchemaHomeVideo";
 import SchemaLocalBusiness from "../components/SchemaLocalBusiness";
 import SchemaOrganization from "../components/SchemaOrganization";
+import SchemaWebsite from "../components/SchemaWebsite";
 import Seo from "../components/Seo";
 import AboutSection from "../sections/AboutSection";
 import Cta from "../sections/Cta";
@@ -19,6 +20,7 @@ function Home() {
         description="Independent insurance advisory and consulting firm providing policy reviews, risk assessment, and coverage guidance. We do not sell insurance policies."
         canonical="https://foysolconsulting.com/"
       />
+      <SchemaWebsite />
       <SchemaOrganization />
       <SchemaLocalBusiness />
       <SchemaHomeVideo />

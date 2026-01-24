@@ -4,6 +4,7 @@ import FAQs from "../components/FAQs";
 import SchemaFAQ from "../components/SchemaFAQ";
 import SchemaLocalBusiness from "../components/SchemaLocalBusiness";
 import SchemaOrganization from "../components/SchemaOrganization";
+import SchemaWebsite from "../components/SchemaWebsite";
 import Seo from "../components/Seo";
 import Footer from "../sections/Footer";
 import Navbar from "../sections/Navbar";
@@ -17,6 +18,7 @@ function About() {
         canonical="https://foysolconsulting.com/about"
       />
       <SchemaFAQ />
+      <SchemaWebsite />
       <SchemaOrganization />
       <SchemaLocalBusiness />
 
