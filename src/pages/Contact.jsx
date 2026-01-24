@@ -5,7 +5,6 @@ import Navbar from "../sections/Navbar";
 import Seo from "../components/Seo";
 import SchemaOrganization from "../components/SchemaOrganization";
 import SchemaLocalBusiness from "../components/SchemaLocalBusiness";
-import SchemaWebsite from "../components/SchemaWebsite";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -42,7 +41,6 @@ function Contact() {
         description="Request an insurance consultation with an independent insurance advisor. Get clear, unbiased guidance on your insurance coverage."
         canonical="https://foysolconsulting.com/contact"
       />
-      <SchemaWebsite />
       <SchemaOrganization />
       <SchemaLocalBusiness />
 

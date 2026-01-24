@@ -5,7 +5,7 @@ const Seo = ({
   description,
   canonical,
   type = "website",
-  image = "/Logo.png",
+  image = "https://www.foysolconsulting.com/Logo.png",
 }) => {
   return (
     <Helmet>
