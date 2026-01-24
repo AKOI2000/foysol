@@ -7,6 +7,8 @@ export default function FAQs() {
 
   return (
     <div id="faqs">
+       <h1 className="heading-1">FAQs</h1>
+
       <div className="grid col-2-by-1 faq">
         {/* Questions */}
         <div className="faq-questions">
@@ -53,7 +55,6 @@ export default function FAQs() {
 
         {/* Right panel for desktop */}
         <div className="faq-answers">
-          <h2 className="heading-2">FAQs</h2>
           <div className="faq-answer-wrapper">
             <div className="faq-answer">
               <ReactMarkdown>{Faqs[hoverIndex].answer}</ReactMarkdown>
