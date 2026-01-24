@@ -29,7 +29,7 @@ function Videoplayer() {
       <video
         controls
         preload="none"
-        poster="https://foysolconsulting.com/Foysol ss.jpg"
+        poster="https://foysolconsulting.com/Foysol-ss.jpg"
         id="video"
         ref={videoRef}
       >
