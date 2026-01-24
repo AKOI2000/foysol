@@ -1,4 +1,5 @@
 import ConsultationPopup from "../components/ConsultationPopup";
+import SchemaHomeVideo from "../components/SchemaHomeVideo";
 import SchemaLocalBusiness from "../components/SchemaLocalBusiness";
 import SchemaOrganization from "../components/SchemaOrganization";
 import Seo from "../components/Seo";
@@ -20,6 +21,7 @@ function Home() {
       />
       <SchemaOrganization />
       <SchemaLocalBusiness />
+      <SchemaHomeVideo />
 
       <Navbar />
       <main>

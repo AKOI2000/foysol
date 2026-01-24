@@ -20,15 +20,23 @@ function Videoplayer() {
       }
     );
 
-
     observer.observe(video);
     return () => observer.disconnect();
   }, []);
 
   return (
     <div className="img-box">
-      <video preload="none" controls poster="./Foysol ss.jpg" id="video" ref={videoRef}>
-        <source src="./Foysol.mp4" type="video/mp4" />r
+      <video
+        controls
+        preload="none"
+        poster="https://foysolconsulting.com/Foysol-ss.jpg"
+        id="video"
+        ref={videoRef}
+      >
+        <source
+          src="https://foysolconsulting.com/Foysol.mp4"
+          type="video/mp4"
+        />
       </video>
     </div>
   );
