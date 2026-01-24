@@ -28,12 +28,12 @@ function Navbar() {
       </nav>
 
       <div className="navbar_cta">
-        <a
+        <button
           className="btn btn-main"
           onClick={() => setOnclick((onClick) => !onClick)}
         >
           Book a consultation
-        </a>
+        </button>
         <div
           className={`nav-hamburger ${isActive ? "active" : ""}`}
           onClick={() => setIsActive((active) => !active)}
