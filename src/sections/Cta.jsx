@@ -12,7 +12,7 @@ function Cta() {
 
                 <div className="cta-call">
                     <p>Let’s help you protect your organization and unlock growth.</p>
-                    <a className="btn btn-main" onClick={()=> setOnclick(onClick => !onClick)}>Book a Strategy session</a>
+                    <button className="btn btn-main" onClick={()=> setOnclick(onClick => !onClick)}>Book a Strategy session</button>
                 </div>
             </div>
             
