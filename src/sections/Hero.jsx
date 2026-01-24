@@ -16,12 +16,12 @@ function Hero() {
           data-driven insurance strategies, risk advisory, and decades of
           industry expertise.
         </p>
-        <a
+        <button
           className="btn btn-main"
           onClick={() => setOnclick((onClick) => !onClick)}
         >
           Book a Consultation
-        </a>
+        </button>
       </div>
       <div className="hero-image">
         <img

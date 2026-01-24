@@ -16,7 +16,7 @@ function Home() {
       <Seo
         title="Independent Insurance Advisory & Consulting for Individuals and Businesses | Foysol Consulting and Advisory Co. Ltd"
         description="Independent insurance advisory and consulting firm providing policy reviews, risk assessment, and coverage guidance. We do not sell insurance policies."
-        canonical="https://foysolconsulting.com"
+        canonical="https://foysolconsulting.com/"
       />
       <SchemaOrganization />
       <SchemaLocalBusiness />
