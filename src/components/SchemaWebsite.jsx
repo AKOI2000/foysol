@@ -8,7 +8,7 @@ const SchemaWebsite = () => {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Foysol Consulting and Advisory Co. Ltd",
-          "url": "https://foysolconsulting.com",
+          "url": "https://foysolconsulting.com/",
           "publisher": {
             "@type": "Organization",
             "name": "Foysol Consulting and Advisory Co. Ltd"

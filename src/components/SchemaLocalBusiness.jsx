@@ -8,7 +8,7 @@ const SchemaLocalBusiness = () => {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "Foysol Consulting and Advisory Co. Ltd",
-          "url": "https://foysolconsulting.com",
+          "url": "https://foysolconsulting.com/",
           "description":
             "Independent insurance advisory and consulting firm offering policy analysis and risk assessment services.",
             "address": {

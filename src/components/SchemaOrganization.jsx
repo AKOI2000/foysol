@@ -8,12 +8,14 @@ const SchemaOrganization = () => {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Foysol Consulting and Advisory Co. Ltd",
-          "url": "https://foysolconsulting.com",
+          "url": "https://foysolconsulting.com/",
           "description":
             "Independent insurance advisory and consulting firm providing policy reviews, risk assessment, and unbiased insurance guidance. The firm does not sell insurance policies.",
-          "sameAs": [
-            "https://www.linkedin.com/company/yourcompany"
-          ],
+          "founder": {
+            "@type": "Person",
+            "name": "Olateju Akintola-Okunola",
+            "sameAs": "https://www.linkedin.com/in/olateju-akintola-okunola-82221a3a6/"
+          },
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Insurance Consultation",
