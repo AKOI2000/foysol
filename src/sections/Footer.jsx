@@ -116,38 +116,42 @@ function Footer() {
         </div>
 
         <div className="footer-links">
-          <h4 className="footer_links-heading">Supports</h4>
+          <h4 className="footer_links-heading">Our Social Media</h4>
           <a href="" className="footer_links-link">
-            FAQ
+            Instagram
           </a>
           <a href="" className="footer_links-link">
-            Privacy Policy
+            Facebook
+          </a>
+          <a
+            href="https://x.com/FoysolConsult"
+            className="footer_links-link"
+            target="_blank"
+          >
+            X
           </a>
           <a href="" className="footer_links-link">
-            Terms & conditions
-          </a>
-          <a href="" className="footer_links-link">
-            Contact us
+            Tiktok
           </a>
         </div>
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <h4 className="footer_links-heading">Our Services</h4>
-          <a href="" className="footer_links-link">
+          <button className="footer_links-link" disabled>
             Insurance Consultancy
-          </a>
-          <a href="" className="footer_links-link">
+          </button>
+          <button className="footer_links-link" disabled>
             Risk Advisory Services
-          </a>
-          <a href="" className="footer_links-link">
+          </button>
+          <button className="footer_links-link" disabled>
             Strategic Placement
-          </a>
-          <a href="" className="footer_links-link">
+          </button>
+          <button className="footer_links-link" disabled>
             Claims Management & Advocacy
-          </a>
-          <a href="" className="footer_links-link">
+          </button>
+          <button className="footer_links-link" disabled>
             Regulatory Advisory
-          </a>
-        </div>
+          </button>
+        </div> */}
       </div>
 
       <div className="footer-copyrights">

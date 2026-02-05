@@ -83,7 +83,7 @@
 
   .footer-box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 1fr 1fr;
 
     @include respond(mds) {
       grid-template-columns: 1fr;
@@ -112,9 +112,10 @@
         background: transparent;
         font-family: $font-text;
         cursor: pointer;
+        text-transform: capitalize;
 
         &:not(:last-child) {
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.8rem;
         }
       }
     }

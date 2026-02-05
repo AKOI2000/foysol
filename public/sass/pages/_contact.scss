@@ -9,6 +9,7 @@
         .detail{
            display: grid;
            grid-template-columns: 8% 1fr;
+           align-items: center;
             
 
            &:not(:last-child) {

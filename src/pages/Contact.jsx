@@ -14,6 +14,7 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
+
   const data = { name, phone: number, email, subject, message };
 
   const submitForm = async (e) => {
@@ -27,6 +28,7 @@ function Contact() {
       });
 
       if (!res.ok) throw new Error("Failed");
+
     } catch (error) {
       console.error(error, error.message);
     } finally {
@@ -120,7 +122,7 @@ function Contact() {
                       />
                     </svg>
 
-                    <p>Monday to Saturday. 9am to 7pm.</p>
+                    <p>We are open 24 hours</p>
                   </div>
                 </div>
               </div>
