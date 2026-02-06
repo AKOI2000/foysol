@@ -117,11 +117,12 @@ function Footer() {
 
         <div className="footer-links">
           <h4 className="footer_links-heading">Our Social Media</h4>
-          <a href="" className="footer_links-link">
+          <a
+            href="https://www.instagram.com/foysolconsult/"
+            className="footer_links-link"
+            target="_blank"
+          >
             Instagram
-          </a>
-          <a href="" className="footer_links-link">
-            Facebook
           </a>
           <a
             href="https://x.com/FoysolConsult"
@@ -129,6 +130,9 @@ function Footer() {
             target="_blank"
           >
             X
+          </a>
+          <a href="" className="footer_links-link">
+            Facebook
           </a>
           <a href="" className="footer_links-link">
             Tiktok
